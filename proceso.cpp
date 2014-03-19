@@ -163,10 +163,7 @@ CvSeq* Proceso::getCirclesInImage(IplImage* frame, CvMemStorage* storage, IplIma
       grayscaleImg->height/4,
       200,
       100 );
-  if (circles->total>0)
-      return circles;
-  else
-      return null;
+  return circles;
 }
 
 void Proceso::drawCircleAndLabel(IplImage* frame, float* p, const char* label) {

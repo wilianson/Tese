@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="560"
+   height="180"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="IMAGEN3.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.1345904"
+     inkscape:cx="156.78035"
+     inkscape:cy="24.400014"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-page="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="744"
+     inkscape:window-x="1360"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-872.36218)">
+    <rect
+       style="fill:#e3dbdb;fill-rule:evenodd;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect2985"
+       width="141.19165"
+       height="52.589756"
+       x="76.051277"
+       y="878.59656" />
+    <rect
+       style="fill:#e3dbdb;fill-rule:evenodd;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect2985-0"
+       width="149.76985"
+       height="52.589756"
+       x="226.85847"
+       y="995.12573" />
+    <rect
+       style="fill:#e3dbdb;fill-rule:evenodd;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect2985-7"
+       width="149.76985"
+       height="52.589756"
+       x="327.69336"
+       y="876.19202"
+       inkscape:transform-center-x="297.92059"
+       inkscape:transform-center-y="-50.971614" />
+    <text
+       xml:space="preserve"
+       style="font-size:31.11613083px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="250.39401"
+       y="999.11261"
+       id="text3019"
+       sodipodi:linespacing="125%"
+       transform="scale(0.97123588,1.029616)"><tspan
+         sodipodi:role="line"
+         id="tspan3021"
+         x="250.39401"
+         y="999.11261"
+         style="font-size:18.66967773px;font-weight:bold;-inkscape-font-specification:Sans Bold">SENSORES</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:31.11613083px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="340.80927"
+       y="883.32361"
+       id="text3019-1"
+       sodipodi:linespacing="125%"
+       transform="scale(0.97123588,1.029616)"><tspan
+         sodipodi:role="line"
+         id="tspan3021-9"
+         x="340.80927"
+         y="883.32361"
+         style="font-size:18.66967773px;font-weight:bold;-inkscape-font-specification:Sans Bold">ACTUADORES</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:32.04743576px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="98.200813"
+       y="912.99878"
+       id="text3019-10"
+       sodipodi:linespacing="125%"
+       transform="scale(1.000305,0.9996951)"><tspan
+         sodipodi:role="line"
+         id="tspan3021-7"
+         x="98.200813"
+         y="912.99878"
+         style="font-size:19.22846031px;font-weight:bold;-inkscape-font-specification:Sans Bold">CONTROL</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 216.48023,899.60837 112.18922,1.636"
+       id="path3053"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 476.81788,899.60837 78.51974,0 0,115.33733 -178.93444,0"
+       id="path3055"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 225.63848,1013.3097 -43.5019,0 -173.5607995,0 0,-122.77835 64.7590165,0"
+       id="path3057"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

@@ -1,0 +1,663 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.11.3)  20 MAR 2014 15:58
+entering extended mode
+ %&-line parsing enabled.
+**tesis.tex
+(./tesis.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(./ezthesis.cls
+Document Class: ezthesis 2007/08/08 A custom thesis class
+(/usr/share/texmf-texlive/tex/latex/base/report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/generic/babel/babel.sty
+Package: babel 2008/07/06 v3.8l The Babel package
+
+(/usr/share/texmf-texlive/tex/generic/babel/spanish.ldf
+Language: spanish.ldf 2009/01/02 v5.0h Spanish support from the babel system
+
+(/usr/share/texmf-texlive/tex/generic/babel/babel.def
+File: babel.def 2008/07/06 v3.8l Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+
+Package babel Warning: No hyphenation patterns were loaded for
+(babel)                the language `Spanish'
+(babel)                I will use the patterns loaded for \language=0 instead.
+
+\l@spanish = a dialect from \language0
+\es@datefmt=\count89
+\es@quottoks=\toks14
+\es@quotdepth=\count90
+Package babel Info: Making " an active character on input line 492.
+Package babel Info: Making . an active character on input line 585.
+Package babel Info: Making < an active character on input line 630.
+Package babel Info: Making > an active character on input line 630.
+Package babel Info: Making ' an active character on input line 657.
+))
+\hours=\count91
+\minutes=\count92
+ (/usr/share/texmf-texlive/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) (/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
+Package: geometry 2008/12/21 v4.2 Page Geometry
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+\Gm@cnth=\count93
+\Gm@cntv=\count94
+\c@Gm@tempcnt=\count95
+\Gm@bindingoffset=\dimen104
+\Gm@wd@mp=\dimen105
+\Gm@odd@mp=\dimen106
+\Gm@even@mp=\dimen107
+\Gm@dimlist=\toks16
+)
+(/usr/share/texmf-texlive/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip43
+\f@ncyO@elh=\skip44
+\f@ncyO@erh=\skip45
+\f@ncyO@olh=\skip46
+\f@ncyO@orh=\skip47
+\f@ncyO@elf=\skip48
+\f@ncyO@erf=\skip49
+\f@ncyO@olf=\skip50
+\f@ncyO@orf=\skip51
+)
+(/usr/share/texmf-texlive/tex/latex/natbib/natbib.sty
+Package: natbib 2009/07/16 8.31 (PWD, AO)
+\bibhang=\skip52
+\bibsep=\skip53
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count96
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
+\Gread@gobject=\count97
+))
+\Gin@req@height=\dimen108
+\Gin@req@width=\dimen109
+)
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
+
+(/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
+Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
+O)
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
+Package: xcolor-patch 2009/10/02 xcolor patch
+))
+\@linkdim=\dimen110
+\Hy@linkcounter=\count98
+\Hy@pagecounter=\count99
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)
+(/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
+t (HO)
+))
+Package hyperref Info: Option `final' set `true' on input line 2864.
+Package hyperref Info: Option `breaklinks' set `true' on input line 2864.
+Package hyperref Info: Option `bookmarks' set `true' on input line 2864.
+Package hyperref Info: Hyper figures OFF on input line 2975.
+Package hyperref Info: Link nesting OFF on input line 2980.
+Package hyperref Info: Hyper index ON on input line 2983.
+Package hyperref Info: Plain pages OFF on input line 2990.
+Package hyperref Info: Backreferencing OFF on input line 2995.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 3191.
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 3428.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bitset.sty
+Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/intcalc.sty
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bigintcalc.sty
+Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
+ (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
+)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)))
+\Fld@menulength=\count100
+\Field@Width=\dimen111
+\Fld@charsize=\dimen112
+\Field@toks=\toks17
+Package hyperref Info: Hyper figures OFF on input line 4377.
+Package hyperref Info: Link nesting OFF on input line 4382.
+Package hyperref Info: Hyper index ON on input line 4385.
+Package hyperref Info: backreferencing OFF on input line 4392.
+Package hyperref Info: Link coloring OFF on input line 4397.
+Package hyperref Info: Link coloring with OCG OFF on input line 4402.
+Package hyperref Info: PDF/A mode OFF on input line 4407.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+)
+\Hy@abspage=\count101
+\c@Item=\count102
+\c@Hfootnote=\count103
+)
+*hyperref using default driver hpdftex*
+(/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
+\Fld@listcount=\count104
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 68.
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/hypcap.sty
+Package: hypcap 2008/09/08 v1.10 Adjusting anchors of captions (HO)
+) (./tesis.aux
+(./titlepage.aux) (./resumen.aux) (./intro.aux) (./capitulo1.aux)
+(./capitulo2.aux) (./capitulo3.aux
+
+LaTeX Warning: Label `fig_mar' multiply defined.
+
+) (./capitulo4.aux
+
+LaTeX Warning: Label `fig_mar' multiply defined.
+
+
+LaTeX Warning: Label `fig_mar' multiply defined.
+
+
+LaTeX Warning: Label `fig_mar' multiply defined.
+
+) (./capitulo5.aux
+
+LaTeX Warning: Label `fig_mar' multiply defined.
+
+) (./capitulo6.aux
+
+LaTeX Warning: Label `fig_mar' multiply defined.
+
+
+LaTeX Warning: Label `fig_mar' multiply defined.
+
+) (./capitulo7.aux))
+\openout1 = `tesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+
+*geometry auto-detecting driver*
+*geometry detected driver: pdftex*
+-------------------- Geometry parameters
+paper: letterpaper
+landscape: --
+twocolumn: --
+twoside: --
+asymmetric: --
+h-parts: 113.81102pt, 429.3521pt, 71.13188pt
+v-parts: 113.81102pt, 587.26488pt, 93.89409pt
+hmarginratio: --
+vmarginratio: --
+lines: --
+heightrounded: --
+bindingoffset: 0.0pt
+truedimen: --
+includehead: --
+includefoot: --
+includemp: --
+driver: pdftex
+-------------------- Page layout dimensions and switches
+\paperwidth  614.295pt
+\paperheight 794.96999pt
+\textwidth  429.3521pt
+\textheight 587.26488pt
+\oddsidemargin  41.54103pt
+\evensidemargin 41.54103pt
+\topmargin  -1.91171pt
+\headheight 15.0pt
+\headsep    28.45274pt
+\footskip   30.0pt
+\marginparwidth 42.67912pt
+\marginparsep   10.0pt
+\columnsep  10.0pt
+\skip\footins  10.8pt plus 4.0pt minus 2.0pt
+\hoffset 0.0pt
+\voffset 0.0pt
+\mag 1000
+
+(1in=72.27pt, 1cm=28.45pt)
+-----------------------
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count105
+\scratchdimen=\dimen113
+\scratchbox=\box26
+\nofMPsegments=\count106
+\nofMParguments=\count107
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count108
+\MPscratchDim=\dimen114
+\MPnumerator=\count109
+\everyMPtoPDFconversion=\toks19
+)
+Package hyperref Info: Link coloring ON on input line 69.
+ (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+)
+\c@section@level=\count110
+)
+LaTeX Info: Redefining \ref on input line 69.
+LaTeX Info: Redefining \pageref on input line 69.
+ (./tesis.out)
+(./tesis.out)
+\@outlinefile=\write3
+\openout3 = `tesis.out'.
+
+\AtBeginShipoutBox=\box27
+\openout2 = `titlepage.aux'.
+
+ (./titlepage.tex [1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./tesis.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 3.
+ [2
+
+
+])
+\tf@toc=\write4
+\openout4 = `tesis.toc'.
+
+
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3]
+\openout2 = `resumen.aux'.
+
+ (./resumen.tex) [4
+
+
+]
+\openout2 = `intro.aux'.
+
+ (./intro.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--12
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5
+
+
+
+])
+Underfull \hbox (badness 10000) in paragraph at lines 13--97
+
+ []
+
+[6]
+\openout2 = `capitulo1.aux'.
+
+ (./capitulo1.tex
+Cap\'{\i }tulo 1.
+
+Underfull \vbox (badness 3009) has occurred while \output is active []
+
+ [7
+
+
+
+]
+[8]) [9]
+\openout2 = `capitulo2.aux'.
+
+ (./capitulo2.tex
+Cap\'{\i }tulo 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--15
+
+ []
+
+
+Underfull \vbox (badness 1077) has occurred while \output is active []
+
+ [10
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--26
+
+ []
+
+[11])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
+Underfull \vbox (badness 2035) has occurred while \output is active []
+
+ [13]
+[14]
+\openout2 = `capitulo3.aux'.
+
+ (./capitulo3.tex
+Cap\'{\i }tulo 3.
+
+Overfull \hbox (5.33525pt too wide) in paragraph at lines 10--16
+\OT1/cmr/m/n/12 Los ^^Sarabes (siglo VII a XV) uti-lizaron los conocimien-tos g
+rie-gos para re-alizar m^^Saquinas
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--16
+
+ []
+
+
+Underfull \vbox (badness 1077) has occurred while \output is active []
+
+ [15
+
+
+
+]
+
+pdfTeX warning: pdflatex (file ./imagen3.pdf): PDF inclusion: found PDF version
+ <1.5>, but at most version <1.4> allowed
+<imagen3.pdf, id=290, 449.68pt x 144.54pt>
+File: imagen3.pdf Graphic file (type pdf)
+ <use imagen3.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
+
+ []
+
+[16]
+
+pdfTeX warning: pdflatex (file ./imagen4.pdf): PDF inclusion: found PDF version
+ <1.5>, but at most version <1.4> allowed
+<imagen4.pdf, id=298, 597.50786pt x 260.975pt>
+File: imagen4.pdf Graphic file (type pdf)
+ <use imagen4.pdf>
+Overfull \hbox (35.5514pt too wide) in paragraph at lines 66--67
+\OT1/cmr/m/n/12 cor-rec-ta-mente para un an^^Sali-sis por parte de m^^Saquinas.
+ Con-s-ta de 4 pro-ce-sos basicamente.[[]] 
+ []
+
+[17 <./imagen3.pdf> <./imagen4.pdf>]
+
+pdfTeX warning: pdflatex (file ./imagen5.pdf): PDF inclusion: found PDF version
+ <1.5>, but at most version <1.4> allowed
+<imagen5.pdf, id=324, 702.625pt x 68.255pt>
+File: imagen5.pdf Graphic file (type pdf)
+ <use imagen5.pdf>) [18 <./imagen5.pdf>]
+\openout2 = `capitulo4.aux'.
+
+ (./capitulo4.tex
+Cap\'{\i }tulo 4.
+<imagen9.jpg, id=342, 759.58781pt x 368.1253pt>
+File: imagen9.jpg Graphic file (type jpg)
+ <use imagen9.jpg>
+<imagen10.jpg, id=343, 726.46407pt x 371.13657pt>
+File: imagen10.jpg Graphic file (type jpg)
+ <use imagen10.jpg>
+<imagen11.jpg, id=344, 636.12656pt x 368.1253pt>
+File: imagen11.jpg Graphic file (type jpg)
+ <use imagen11.jpg>) [19
+
+
+
+]
+[20 <./imagen9.jpg> <./imagen10.jpg>] [21 <./imagen11.jpg>]
+\openout2 = `capitulo5.aux'.
+
+ (./capitulo5.tex
+Cap\'{\i }tulo 5.
+
+
+pdfTeX warning: pdflatex (file ./imagen1.pdf): PDF inclusion: found PDF version
+ <1.5>, but at most version <1.4> allowed
+<imagen1.pdf, id=362, 385.44pt x 385.44pt>
+File: imagen1.pdf Graphic file (type pdf)
+ <use imagen1.pdf> [22
+
+
+
+]
+
+pdfTeX warning: pdflatex (file ./imagen2.pdf): PDF inclusion: found PDF version
+ <1.5>, but at most version <1.4> allowed
+<imagen2.pdf, id=373, 385.44pt x 385.44pt>
+File: imagen2.pdf Graphic file (type pdf)
+ <use imagen2.pdf>) [23 <./imagen1.pdf>] [24 <./imagen2.pdf>]
+\openout2 = `capitulo6.aux'.
+
+ (./capitulo6.tex
+Cap\'{\i }tulo 6.
+<imagen7.jpg, id=408, 87.32625pt x 90.3375pt>
+File: imagen7.jpg Graphic file (type jpg)
+ <use imagen7.jpg>
+<imagen8.jpg, id=409, 286.06876pt x 299.61937pt>
+File: imagen8.jpg Graphic file (type jpg)
+ <use imagen8.jpg>) [25
+
+
+
+]
+[26 <./imagen7.jpg> <./imagen8.jpg>]
+\openout2 = `capitulo7.aux'.
+
+ (./capitulo7.tex
+Cap\'{\i }tulo 7.
+) [27
+
+
+
+]
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ± in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--123
+\OT1/cmr/m/it/12 robots-perception-navigation/intelligent-global-vision-for-tea
+ms-of-mobile-robots\OT1/cmr/m/n/12 ,
+ []
+
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no “ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ‡ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ƒ in font cmr12!
+[28
+
+
+]
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¶ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+ [29]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+ [30]
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ³ in font cmr12!
+Missing character: There is no Ã in font cmti12!
+Missing character: There is no ¡ in font cmti12!
+Missing character: There is no Ã in font cmti12!
+Missing character: There is no ³ in font cmti12!
+Missing character: There is no Ã in font cmti12!
+Missing character: There is no º in font cmti12!
+Missing character: There is no Ã in font cmti12!
+Missing character: There is no © in font cmti12!
+ [31] (./tesis.aux (./titlepage.aux) (./resumen.aux) (./intro.aux) (./capitulo1
+.aux) (./capitulo2.aux) (./capitulo3.aux) (./capitulo4.aux)
+(./capitulo5.aux) (./capitulo6.aux) (./capitulo7.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 6530 strings out of 495061
+ 90114 string characters out of 1182621
+ 184040 words of memory out of 3000000
+ 9442 multiletter control sequences out of 15000+50000
+ 9449 words of font info for 33 fonts, out of 3000000 for 9000
+ 28 hyphenation exceptions out of 8191
+ 39i,12n,51p,1194b,580s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-t
+exlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/font
+s/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/pub
+lic/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb
+></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/shar
+e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on tesis.pdf (31 pages, 668344 bytes).
+PDF statistics:
+ 498 PDF objects out of 1000 (max. 8388607)
+ 115 named destinations out of 1000 (max. 500000)
+ 315 words of extra memory for PDF output out of 10000 (max. 10000000)
+

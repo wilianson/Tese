@@ -10,12 +10,6 @@
 #include "opencv/cxcore.h"
 class Robot
 {
-
-
-
-
-
-
     public:
     Robot();
     double orien_t;

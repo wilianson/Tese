@@ -9,6 +9,7 @@
 #include "opencv/cxcore.h"
 #include "robot.h"
 #include <fstream>
+
 using namespace std;
 class Proceso
 {
@@ -28,13 +29,14 @@ class Proceso
     IplImage* grayscaleImg;//imagen en escala de grises para realizar el filtro de gauss
     deque<CvSeq*> samples;//cola doblemente enlazada para contener los frames
     int key;
-
+    ofstream fs;
 
 public:
     Proceso(int idCama);//constructor de clase si es realtime
     Proceso(char* nomVid);//constructor si es secuencia de video
     CvSeq* getCirclesInImage(IplImage*, CvMemStorage*, IplImage*);
     void drawCircleAndLabel(IplImage*, float*, const char*);
+    void drawObjectPosition(IplImage*, CvPoint);
     bool circlesBeHomies(float*, float*);
     CvPoint find_pos( CvPoint,CvPoint);
     void processing_camera(int id_cam,int col);
@@ -45,6 +47,7 @@ public:
     int getIdcam();
     int findCol(IplImage* frame, float r, float x, float y);
     bool chkCam();
+    void write_file(char*);
 
 
 

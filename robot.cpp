@@ -58,13 +58,11 @@ CvPoint Robot::get_pos_t1(){
 }
 double Robot::get_orien_t(){
     return this->orien_t;
-
 }
+
 double Robot::get_orien_t1(){
     return this->orien_t1;
-
 }
-
 
 double Robot::get_radPri(){
     return this->radPri;

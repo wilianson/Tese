@@ -15,6 +15,7 @@ const int Y_THRESH = 15;
 const int R_THRESH = 20;
 const int MATCHES_THRESH = 2;
 const int HUE_BINS = 32;
+#define PI 3.14159265
 
 //constructor
 Proceso::Proceso(int idCama)
@@ -79,21 +80,20 @@ void Proceso::proces_camera(Robot robots[])
             centros[i].y =container[1];
             float r = container[2];
             radios[i] =container[2];
-
             //miremos lo ciclos
             cout<<"ciclo numero "<<i<<endl;
             //total del circulos
             cout<<"numero de circulos "<<circles->total<<endl;
             cout<<"radio del circulo  "<<i<<" "<<r<<endl;
-            cout<<"posicion"<<x<<" , "<<y<<endl;
+            cout<<"posicion "<<x<<" , "<<y<<endl;
             if (x-r < 0 || y-r < 0 || x+r >= this->frame->width || y+r >= this->frame->height) {
               continue;
             }
             for (int j = 0; j < this->samples.size(); j++) {
               CvSeq* oldSample =this-> samples[j];
               for (int k = 0; k < oldSample->total; k++) {
-                float* p2 = (float*)cvGetSeqElem( oldSample, k );
-                if (circlesBeHomies(container, p2)) {
+                float* container2 = (float*)cvGetSeqElem( oldSample, k );
+                if (circlesBeHomies(container, container2)) {
                   matches++;
                   break;
                 }
@@ -112,38 +112,43 @@ void Proceso::proces_camera(Robot robots[])
               drawCircleAndLabel(this->frame, container, label);
             }
           }
+        //*****Esto es el calculo de la posicion y orientacion
+        double orient=find_orien(centros[0],centros[1]);
+        drawOrientationAndLabel(this->frame, orient);
+        float dist =eucdist(centros[0],centros[1]);
+        cout <<"La supuesta distancia seria: "<<dist<<endl;
+
+        //encontrando la posicion segun kelson y el paper de bianchi
+        //CvPoint pos=find_pos(centros[0],centros[1]);
+
+        //posicion segun mi nuevo calculo
+        //CvPoint pos=find_pos_trig(centros[0],centros[1],orient,dist);
+        CvPoint pos=find_pos_sing(centros[0],centros[1]);
+        drawObjectPosition(this->frame, pos);
+        cout <<"La posicion del robot es: "<<pos.x <<" , " <<pos.y<<endl;
+        //crear un archivo
+
+        fstream file("posiciones.txt");
+
+        //Colocando las posiciones en el Robot
+        for (int i=0;i<circles->total;i=+2)
+        {
+            robots[i].orien_t=find_orien(centros[i],centros[i+1]);
+            robots[i].pos_t=find_pos(centros[i],centros[i+1]);
+            //guardarlo en un fichero
+            file<<"( "<<robots[i].pos_t.x<<" , "<<robots[i].pos_t.y<<" )"<<"\t"<<"\t"<<robots[i].orien_t<<endl;
+        }
+        this->samples.push_back(circles);
+        if (this->samples.size() > HISTORY_SIZE) {
+            this->samples.pop_front();
+        }
+        cvShowImage( "video_procesado", this->frame);
+        //mostrando la posicion eso espero :D
+        //distancia entre radios
     }
     else {
         cout<<endl<<"Los circulos no son pares"<<endl;
     }
-
-    //*****Esto es el calculo de la posicion y orientacion
-    float dist =eucdist(centros[0],centros[1]);
-    cout <<"La supuesta distancia seria: "<<dist<<endl;
-    //encontrando la posicion segun kelson
-    CvPoint pos=find_pos(centros[0],centros[1]);
-    drawObjectPosition(this->frame, pos);
-    cout <<"La posicion del robot es: "<<pos.x <<" , " <<pos.y<<endl;
-    //crear un archivo
-    fstream file("posiciones.txt");
-
-    //Colocando las posiciones en el Robot
-    for (int i=0;i<circles->total;i=+2)
-    {
-        robots[i].orien_t=find_orien(centros[i],centros[i+1]);
-        robots[i].pos_t=find_pos(centros[i],centros[i+1]);
-        //guardarlo en un fichero
-        file<<"( "<<robots[i].pos_t.x<<" , "<<robots[i].pos_t.y<<" )"<<"\t"<<"\t"<<robots[i].orien_t<<endl;
-    }
-
-    this->samples.push_back(circles);
-    if (this->samples.size() > HISTORY_SIZE) {
-        this->samples.pop_front();
-    }
-    cvShowImage( "video_procesado", this->frame);
-    //mostrando la posicion eso espero :D
-    //distancia entre radios
-
 
 
 }
@@ -166,6 +171,50 @@ CvPoint Proceso::find_pos( CvPoint cent1,CvPoint cent2)
         res.y=0;
     if(cent1.x!=0&&cent2.x!=0)
         res.x=x2-0.5*((cent2.x-cent1.x));
+    else
+        res.y=0;
+    return res;
+
+}
+CvPoint Proceso::find_pos_trig( CvPoint cent1,CvPoint cent2,double orien,float hip)
+{
+    CvPoint res;
+    //jalando el menor y a y2
+    float y2,y1;
+    cent1.y>cent2.y?y1=cent1.y,y2=cent2.y:y2=cent1.y,y1=cent2.y;
+
+    //jalando el menor x a x2
+    float x2,x1;
+    cent1.x>cent2.x?x1=cent1.x,x2=cent2.x:x1=cent2.x,x2=cent1.x;
+
+    if(cent1.y!=0&&cent2.y!=0)
+        res.y=y2-y1-(hip/2)*cos(orien);
+    else
+        res.y=0;
+    if(cent1.x!=0&&cent2.x!=0)
+        res.x=x2-x1-(hip/2)*sin(orien);
+    else
+        res.y=0;
+    return res;
+
+}
+CvPoint Proceso::find_pos_sing( CvPoint cent1,CvPoint cent2)
+{
+    CvPoint res;
+    //jalando el menor y a y2
+    float y2,y1;
+    cent1.y>cent2.y?y1=cent1.y,y2=cent2.y:y2=cent1.y,y1=cent2.y;
+
+    //jalando el menor x a x2
+    float x2,x1;
+    cent1.x>cent2.x?x1=cent1.x,x2=cent2.x:x1=cent2.x,x2=cent1.x;
+
+    if(cent1.y!=0&&cent2.y!=0)
+        res.y=(cent1.y+cent2.y)/2;
+    else
+        res.y=0;
+    if(cent1.x!=0&&cent2.x!=0)
+        res.x=(cent1.x+cent2.x)/2;
     else
         res.y=0;
     return res;
@@ -195,7 +244,7 @@ void Proceso::drawCircleAndLabel(IplImage* frame, float* p, const char* label) {
   //dibuja el circulo en la imagen original
 
   CvFont font;
-  cvInitFont(&font, CV_FONT_HERSHEY_SIMPLEX, 1, 1, 0.0, 1, 8);
+  cvInitFont(&font, CV_FONT_HERSHEY_COMPLEX_SMALL, 1, 1, 0.0, 1, 8);
   //circulo encerrado
   cvCircle( frame, cvPoint(cvRound(p[0]),cvRound(p[1])), cvRound(p[2]), CV_RGB(255,255,0), 3, 8, 0 );
   cvPutText( frame, label, cvPoint(cvRound(p[0]),cvRound(p[1])), &font, CV_RGB(255,0,0) );
@@ -203,10 +252,27 @@ void Proceso::drawCircleAndLabel(IplImage* frame, float* p, const char* label) {
 void Proceso::drawObjectPosition(IplImage* frame, CvPoint p) {
   //dibuja el circulo en la imagen original
   CvFont font;
-  cvInitFont(&font, CV_FONT_HERSHEY_SIMPLEX, 1, 1, 0.0, 1, 8);
+  cvInitFont(&font, CV_FONT_HERSHEY_COMPLEX_SMALL, 1, 1, 0.0, 1, 8);
   //circulo encerrado
   cvCircle( frame, p, 5, CV_RGB(0,255,255), 3, 8, 0 );
   cvPutText( frame, "Posicion", p, &font, CV_RGB(0,0,255) );
+}
+void Proceso::drawOrientationAndLabel(IplImage* frame, double orien) {
+  //dibuja el circulo en la imagen original
+  CvFont font;
+  cvInitFont(&font, CV_FONT_HERSHEY_COMPLEX_SMALL, 1, 1, 0.0, 1, 8);
+  //circulo encerrado
+  CvPoint punto;
+  punto.x=30;
+  punto.y=30;
+  char orient[10];
+  gcvt(orien,  4, orient);
+  if(orient<=0){
+      cvPutText( frame, "No orientation", punto, &font, CV_RGB(255,0,255) );
+
+  }
+  else
+    cvPutText( frame, orient, punto, &font, CV_RGB(255,0,255) );
 }
 
 bool Proceso::circlesBeHomies(float* c1, float* c2) {
@@ -217,7 +283,7 @@ bool Proceso::circlesBeHomies(float* c1, float* c2) {
 double Proceso::find_orien( CvPoint point1,CvPoint point2)
 {
     double orien;
-    orien=atan((double)(abs(point1.y-point2.y))/((double)abs(point1.x-point2.x)));
+    orien=atan((double)(abs(point1.y-point2.y))/((double)abs(point1.x-point2.x)))* 180 / PI;
     return orien;
 }
 

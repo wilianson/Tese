@@ -37,8 +37,11 @@ public:
     CvSeq* getCirclesInImage(IplImage*, CvMemStorage*, IplImage*);
     void drawCircleAndLabel(IplImage*, float*, const char*);
     void drawObjectPosition(IplImage*, CvPoint);
+    void drawOrientationAndLabel(IplImage*, double);
     bool circlesBeHomies(float*, float*);
     CvPoint find_pos( CvPoint,CvPoint);
+    CvPoint find_pos_trig(CvPoint,CvPoint,double,float);
+    CvPoint find_pos_sing(CvPoint,CvPoint);
     void processing_camera(int id_cam,int col);
     float eucdist(CvPoint c1, CvPoint c2);
     char* getColor(int);

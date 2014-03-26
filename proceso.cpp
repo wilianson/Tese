@@ -322,7 +322,7 @@ return color;
 int Proceso::findCol(IplImage *frame, float r, float x, float y)
 {
     cvSetImageROI(frame, cvRect(x-r, y-r, 2*r, 2*r));
-    //se saca un rectangulo de la imagen del ciruclo
+    //se saca un rectangulo de la imagen del circulo
     IplImage* copy = cvCreateImage(cvSize(2*r, 2*r), frame->depth, 3);
     cvCvtColor(frame, copy, CV_BGR2HSV);
     //copia en blanco y negro
@@ -348,7 +348,6 @@ int Proceso::findCol(IplImage *frame, float r, float x, float y)
     return highestBinSeen;
 }
 void Proceso::write_file(char *cadena){
-
     ofstream archivo;  // objeto de la clase ofstream
     archivo.open("datos.txt");
     archivo <<cadena << endl;

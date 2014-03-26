@@ -18,7 +18,8 @@ LIBS += `pkg-config opencv --cflags --libs`
 SOURCES += main.cpp \
     FramesperSecond.cpp \
     proceso.cpp \
-    robot.cpp
+    robot.cpp \
+    PerceptronOneLayer.cpp
 
 HEADERS += \
     proceso.h \

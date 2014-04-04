@@ -11,24 +11,36 @@ using namespace std;
 
 Neuron::Neuron(int prev_n_neurons)
 {
-    // each neuron know the weights of each connection
-    // with neurons of the previous layer
-    pesosSinapticos = new float[prev_n_neurons];
-    // set default weights
+    // cada neuron sabe los pesos de cada coneccion con los neurones de la capa anterior
+    //pesosSinapticos = new float[prev_n_neurons];
+    // dar los pesos por defecto
+
     for (int i = 0; i < prev_n_neurons; ++i)
-        pesosSinapticos[i] = (rand()%10000)/10000.0 - 0.5f;
+    {
+        pesosSinapticos.push_back( (rand()%10000)/10000.0 - 0.5f);
+        cout<<" el peso en con el neuron " << pesosSinapticos.at(i)   <<endl;
+    }
+    cout<<"El tamaño del neuron es "<<pesosSinapticos.size()<<endl;
 }
 int Neuron::getNumElem(float *array){
-    int tam =sizeof(array)/sizeof(float);
-    return tam;
+
+    int ite=-1 ;
+    float elem=1.0;
+    while(elem!=NULL){
+        ite++;
+        elem=array[ite];
+        cout<<elem<<"  "<<ite<<endl;
+    }
+    return ite-1;
 }
 
-float Neuron::activaciones(float* entradas){
+float Neuron::activaciones(vector <float> entradas){
     activacion = 0.0f;
 
-    if (getNumElem(entradas) == getNumElem(pesosSinapticos)){
-    for (int i = 0; i < getNumElem(entradas); ++i) // producto escalar del peso por las entradas
-        activacion += entradas[i] * pesosSinapticos[i];
+    //cout<<"El tamaño de la entrada es: "<<sizeof(entradas)/sizeof(entradas[0]);
+    if (entradas.size() == pesosSinapticos.size()){
+    for (int i = 0; i < entradas.size(); ++i) // producto escalar del peso por las entradas
+        activacion += entradas.at(i) * pesosSinapticos.at(i);
     // phi(activacion), our activation function (tanh(x))
     return 2.0f / (1.0f + (float) exp((-activacion) * lambda)) - 1.0f;
     }
@@ -41,12 +53,12 @@ float Neuron::getActivacionDerivativa(){
     float expmlx = (float) exp(lambda * activacion);
     return 2 * lambda * expmlx / ((1 + expmlx) * (1 + expmlx));
 }
-float* Neuron::getPesosSinapticos(){
+vector<float> Neuron::getPesosSinapticos(){
     return pesosSinapticos;
 }
 float Neuron::getPesoSinaptico(int posicion){
-    return pesosSinapticos[posicion];
+    return pesosSinapticos.at(posicion);
 }
 void Neuron::setPesoSinaptico(int posicion, float valor){
-    pesosSinapticos[posicion] = valor;
+    pesosSinapticos.at(posicion) = valor;
 }

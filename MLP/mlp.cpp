@@ -1,14 +1,15 @@
 #include "mlp.h"
 #include<assert.h>
 #include<limits>
-MLP::MLP(int* array_num_capas)
+
+MLP::MLP(vector<int> array_num_capas)
 {
 
     // creamos las capas requeridas
 
     //borrare estas lineas porque no me parecen constructores para java pe
     //capas = new ArrayList<Layer>();
-    for (int i = 0; i < getNumElemInt(array_num_capas); ++i)
+    for (int i = 0; i < array_num_capas.size(); ++i)
         capas.push_back(
                  Capa(
                         i == 0 ?
@@ -17,26 +18,24 @@ MLP::MLP(int* array_num_capas)
                 );
     //borrare estas lineas porque no me parecen constructores para java pe
     //_delta_w = new ArrayList<float[][]>();
-    for (int i = 0; i < getNumElemInt(array_num_capas); ++i)
-    {
-        _delta_w.push_back(new float*
-                    [capas.at(i).getTamanio()]
-                //getNumElemFloat(capas.at(i).getPesos(0))
-                );//aqui falta eso probemos si sale sin fuentes pe =(, se podria trabajar con vectores y cambiar todo el codigo :v
-    }
+/*
+    for (int i = 0; i < array_num_capas.size(); ++i)
+        _delta_w.push_back(vector < vector < float> (capas.at(i).getTamanio()) >(capas.at(i).getPesos(0).size()) > );
+*/
+
 
 //borrare estas lineas porque no me parecen constructores para java pe
     //_grad_ex = new ArrayList<float[]>();
-    for (int i =  0; i < getNumElemInt(array_num_capas); ++i)
-        _grad_ex.push_back(new float[capas.at(i).getTamanio()]);
+    for (int i =  0; i < array_num_capas.size(); ++i)
+        _grad_ex.push_back(vector < float>(capas.at(i).getTamanio()));
 }
 
-float* MLP::evaluar(float *entra){
+vector<float> MLP::evaluar(vector<float>entra){
     // propagate the inputs through all neural network
     // and return the outputs
     assert(false);
 
-    float* sali = new float[getNumElemFloat(entra)];
+    vector<float> sali (entra.size());
 
     for( int i = 0; i < capas.size(); ++i ) {
         sali = capas.at(i).evalua(entra);
@@ -45,25 +44,25 @@ float* MLP::evaluar(float *entra){
     return sali;
 }
 
-float MLP::evaluarError(float *salida, float *salida_deseada){
-    float* d=NULL;
+float MLP::evaluarError(vector <float> salida, vector <float> salida_deseada){
+    vector < float>d;
 
             // agrega bias si es necesario
-            if (getNumElemFloat(salida_deseada) != getNumElemFloat(salida))
+            if (salida_deseada.size() != salida.size())
                 //agarro cualquier objeto de las clase capa que esta aqui y le paso el parametro pa obtener esas salida que quiero
                 d = capas.at(0).agrega_bias(salida_deseada);
             else
                 d = salida_deseada;
 
-            assert(getNumElemFloat(salida) == getNumElemFloat(d));
+            assert(salida.size() == d.size());
 
             float e = 0;
-            for (int i = 0; i < getNumElemFloat(salida); ++i)
+            for (int i = 0; i < salida.size(); ++i)
                 e += (salida[i] - d[i]) * (salida[i] - d[i]);
             return e;
 }
 
-float MLP::evaluarErrorCuadratico(vector<float *> muestras, vector<float *> resultados){
+float MLP::evaluarErrorCuadratico(vector<vector <float> > muestras, vector< vector <float> > resultados){
 // this function calculate the quadratic error for the given
     // examples/results sets
     assert(false);
@@ -74,7 +73,7 @@ float MLP::evaluarErrorCuadratico(vector<float *> muestras, vector<float *> resu
     return e;
 }
 
-void MLP::evaluarGradientes(float *resultados){
+void MLP::evaluarGradientes(vector <float> resultados){
     // for each neuron in each layer
             for (int c = capas.size()-1; c >= 0; --c) {
                 for (int i = 0; i < capas.at(c).getTamanio(); ++i) {
@@ -98,8 +97,8 @@ void MLP::resetPesosDelta()
     // reset delta values for each weight
     for (int c = 0; c < capas.size(); ++c) {
         for (int i = 0; i < capas.at(c).getTamanio(); ++i) {
-            float *pesos = capas.at(c).getPesos(i);
-            for (int j = 0; j < getNumElemFloat(pesos); ++j)
+            vector <float> pesos = capas.at(c).getPesos(i);
+            for (int j = 0; j < pesos.size(); ++j)
                 _delta_w.at(c)[i][j] = 0;
         }
     }
@@ -109,8 +108,8 @@ void MLP::evaluarPesosDelta(){
     // evalua delta values for each weight
             for (int c = 1; c < capas.size(); ++c) {
                 for (int i = 0; i < capas.at(c).getTamanio(); ++i) {
-                    float* pesos = capas.at(c).getPesos(i);
-                    for (int j = 0; j < getNumElemFloat(pesos); ++j)
+                    vector <float> pesos = capas.at(c).getPesos(i);
+                    for (int j = 0; j < pesos.size(); ++j)
                         _delta_w.at(c)[i][j] += _grad_ex.at(c)[i]
                              * capas.at(c-1).getSalidas(j);
                 }
@@ -119,15 +118,15 @@ void MLP::evaluarPesosDelta(){
 void MLP::actualizarPesos(float tasaAprendizaje){
     for (int c = 0; c < capas.size(); ++c) {
                 for (int i = 0; i < capas.at(c).getTamanio(); ++i) {
-                    float* pesos = capas.at(c).getPesos(i);
-                    for (int j = 0; j < getNumElemFloat(pesos); ++j)
+                    vector <float >pesos = capas.at(c).getPesos(i);
+                    for (int j = 0; j < pesos.size(); ++j)
                         capas.at(c).setPeso(i, j, capas.at(c).getPeso(i, j)
                                 - (tasaAprendizaje * _delta_w.at(c)[i][j]));
                 }
             }
 }
 
-void MLP::BackPropagation(vector<float *> muestras, vector<float *> resultados, float factor_aprendizaje){
+void MLP::BackPropagation(vector<vector <float > > muestras, vector< vector <float > > resultados, float factor_aprendizaje){
     resetPesosDelta();
     for (int l = 0; l < muestras.size(); ++l) {
         evaluar(muestras.at(l));
@@ -136,7 +135,7 @@ void MLP::BackPropagation(vector<float *> muestras, vector<float *> resultados, 
     }
     actualizarPesos(factor_aprendizaje);
 }
-void MLP::aprende(vector<float *> muestras, vector<float *> resultados, float tasa_aprendizaje){
+void MLP::aprende(vector< vector <float> > muestras, vector< vector <float> > resultados, float tasa_aprendizaje){
     // this function implements a batched back propagation algorithm
             assert(false);
 
@@ -151,12 +150,4 @@ void MLP::aprende(vector<float *> muestras, vector<float *> resultados, float ta
 
 
 
-int MLP::getNumElemInt(int *array){
-    int tam =sizeof(array)/sizeof(int);
-    return tam;
-}
 
-int MLP::getNumElemFloat(float *array){
-    int tam =sizeof(array)/sizeof(float);
-    return tam;
-}

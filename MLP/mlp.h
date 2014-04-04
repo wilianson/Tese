@@ -6,28 +6,27 @@ using namespace std;
 class MLP
 {
     vector<Capa> capas;
-    vector<float**> _delta_w;
-    vector<float*> _grad_ex;
+    vector<vector<vector<float> > > _delta_w;
+    vector<vector <float> > _grad_ex;
 
 public:
-    MLP(int* array_num_capas);
-    float* evaluar(float* entra);
-    float evaluarError(float* salida, float* salida_deseada);
-    float evaluarErrorCuadratico(vector<float*> muestras,vector<float*> resultados);
-    void evaluarGradientes(float* resultados);
+    MLP(vector <int> array_num_capas);
+    vector <float> evaluar(vector <float> entra);
+    float evaluarError(vector <float >salida, vector <float> salida_deseada);
+    float evaluarErrorCuadratico(vector<vector <float> > muestras,vector<vector <float> > resultados);
+    void evaluarGradientes(vector <float> resultados);
     void resetPesosDelta();
     void evaluarPesosDelta();
     void actualizarPesos(float tasaAprendizaje);
-    void BackPropagation(vector<float*> muestras,
-                         vector<float*> resultados,
+    void BackPropagation(vector<vector <float> > muestras,
+                         vector<vector <float> > resultados,
                          float factor_aprendizaje);
-    void aprende(vector<float*> muestras,
-                 vector<float*> resultados,
+    void aprende(vector<vector <float> > muestras,
+                 vector<vector <float> > resultados,
                  float tasa_aprendizaje);
 
-    float* agrega_bias(float* entrada);
-    int getNumElemFloat(float* array);
-    int getNumElemInt(int* array);
+    vector <float> agrega_bias(vector <float >entrada);
+
 };
 
 #endif // MLP_H

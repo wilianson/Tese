@@ -15,28 +15,28 @@ Capa::Capa(int prev_n_neurons, int n_neurons)
     /*
     vector<Neuron> neur;
     neuronas =  neur;*/
-    salidas = new float[_n_neurons];
+    salidas = vector< float>(_n_neurons);
     for (int i = 0; i < _n_neurons; ++i)
         neuronas.push_back( Neuron(_prev_n_neurons));
 }
-float* Capa::agrega_bias(float *entrada){
-    float* sal=new float[getNumElemFloat(entrada)+1];
-    for (int i = 0; i < getNumElemFloat(entrada); ++i)
-                sal[i + 1] = entrada[i];
+vector<float> Capa::agrega_bias(vector<float>entrada){
+    vector<float> sal(entrada.size()+1);
+    for (int i = 0; i < entrada.size(); ++i)
+                sal.at(i + 1) = entrada.at(i);
             sal[0] = 1.0f;
             return sal;
 }
 
-float* Capa::evalua(float *entr){
-    float* entradas;
+vector<float> Capa::evalua(vector<float>entr){
+    vector <float> entradas;
 
             // add an input (bias) if necessary
-            if (getNumElemFloat(entr)!= getNumElemFloat(getPesos(0)))
+            if (entr.size()!= getPesos(0).size())
                 entradas = agrega_bias(entr);
             else
                 entradas = entr;
 
-            assert (getNumElemFloat(getPesos(0)) == getNumElemFloat(entradas));
+            assert (getPesos(0).size() == entradas.size());
 
                 // stimulate each neuron of the layer and get its output
                 for (int i = 1; i < _n_neurons; ++i)
@@ -59,7 +59,7 @@ float Capa::getActivacionDerivativa(int i){
     return neuronas.at(i).getActivacionDerivativa();
 }
 
-float* Capa::getPesos(int i){
+vector<float> Capa::getPesos(int i){
     return neuronas.at(i).getPesosSinapticos();
 }
 float Capa::getPeso(int i, int j){
@@ -72,6 +72,11 @@ void Capa::setPeso(int i, int j, float valor){
 
 
 int Capa::getNumElemFloat(float *array){
-    int tam =sizeof(array)/sizeof(float);
-    return tam;
+    int ite=0 ;
+    float elem=1.0;
+    while(elem!=NULL){
+        elem=array[ite];
+        ite++;
+    }
+    return ite-2;
 }

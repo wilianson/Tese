@@ -7,16 +7,20 @@
 #include<vector>
 #include<iostream>
 #include<math.h>
+//#include<array>
+using namespace std;
 class Neuron
 {
     float activacion;
-    float* pesosSinapticos;
+    //array <float> pesosSinapticos;
+    vector<float> pesosSinapticos;
+    //float* pesosSinapticos;
     const static float lambda = 1.5f;
 public:
     Neuron(int prev_n_neurons);
-    float activaciones(float* inputs);
+    float activaciones(vector<float>);
     float getActivacionDerivativa();
-    float* getPesosSinapticos();
+    vector<float> getPesosSinapticos();
     float getPesoSinaptico(int posicion);
     void setPesoSinaptico(int posicion,float valor);
     int getNumElem(float* array);

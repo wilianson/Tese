@@ -1,0 +1,217 @@
+\documentclass[oneside,numbers,spanish]{ezthesis}
+%% # Opciones disponibles para el documento #
+%%
+%% Las opciones con un (*) son las opciones predeterminadas.
+%%
+%% Modo de compilar:
+%%   draft            - borrador con marcas de fecha y sin im'agenes
+%%   draftmarks       - borrador con marcas de fecha y con im'agenes
+%%   final (*)        - version final de la tesis
+%%
+%% Tama'no de papel:
+%%   letterpaper (*)  - tama'no carta (Am'erica)
+%%   a4paper          - tama'no A4    (Europa)
+%%
+%% Formato de impresi'on:
+%%   oneside          - hojas impresas por un solo lado
+%%   twoside (*)      - hijas impresas por ambos lados
+%%
+%% Tama'no de letra:
+%%   10pt, 11pt, o 12pt (*)
+%%
+%% Espaciado entre renglones:
+%%   singlespace      - espacio sencillo
+%%   onehalfspace (*) - espacio de 1.5
+%%   doublespace      - a doble espacio
+%%
+%% Formato de las referencias bibliogr'aficas:
+%%   numbers          - numeradas, p.e. [1]
+%%   authoryear (*)   - por autor y a'no, p.e. (Newton, 1997)
+%%
+%% Opciones adicionales:
+%%   spanish         - tesis escrita en espa'nol
+%%
+%% Desactivar opciones especiales:
+%%   nobibtoc   - no incluir la bibiolgraf'ia en el 'Indice general
+%%   nofancyhdr - no incluir "fancyhdr" para producir los encabezados
+%%   nocolors   - no incluir "xcolor" para producir ligas con colores
+%%   nographicx - no incluir "graphicx" para insertar gr'aficos
+%%   nonatbib   - no incluir "natbib" para administrar la bibliograf'ia
+
+%% Paquetes adicionales requeridos se pueden agregar tambi'en aqu'i.
+%% Por ejemplo:
+%\usepackage{subfig}
+%\usepackage{multirow}
+
+%% # Datos del documento #
+%% Nota que los acentos se deben escribir: \'a, \'e, \'i, etc.
+%% La letra n con tilde es: \~n.
+
+\author{Percy Wilianson Lov\'on Ramos}
+\title{Modelo h\'ibrido para la localizaci\'on y seguimiento de un robot}
+\degree{Ingeniero de Sistemas}
+\supervisor{Por definir}
+\institution{Universidad Nacional de San Agust\'in}
+\faculty{Facultad de Ingenier\'ia de Producci\'on y Servicios}
+\department{Escuela Profesional de Ingenier\'ia de Sistemas}
+
+%% # M'argenes del documento #
+%% 
+%% Quitar el comentario en la siguiente linea para austar los m'argenes del
+%% documento. Leer la documentaci'on de "geometry" para m'as informaci'on.
+
+%\geometry{top=40mm,bottom=33mm,inner=40mm,outer=25mm}
+
+%% El siguiente comando agrega ligas activas en el documento para las
+%% referencias cruzadas y citas bibliogr'aficas. Tiene que ser *la 'ultima*
+%% instrucci'on antes de \begin{document}.
+\hyperlinking
+\begin{document}
+
+%% En esta secci'on se describe la estructura del documento de la tesis.
+%% Consulta los reglamentos de tu universidad para determinar el orden
+%% y la cantidad de secciones que debes de incluir.
+
+%% # Portada de la tesis #
+%% Mirar el archivo "titlepage.tex" para los detalles.
+\include{titlepage}
+
+%% # Prefacios #
+%% Por cada prefacio (p.e. agradecimientos, resumen, etc.) crear
+%% un nuevo archivo e incluirlo aqu'i.
+%% Para m'as detalles y un ejemplo mirar el archivo "gracias.tex".
+%\include{gracias}
+
+%% # 'Indices y listas de contenido #
+%% Quitar los comentarios en las lineas siguientes para obtener listas de
+%% figuras y cuadros/tablas.
+\tableofcontents
+%\listoffigures
+%\listoftables
+
+%% # Cap'itulos #
+%% Por cada cap'itulo hay que crear un nuevo archivo e incluirlo aqu'i.
+%% Mirar el archivo "intro.tex" para un ejemplo y recomendaciones para
+%% escribir.
+\include{resumen}
+\include{intro}
+\include{capitulo1}
+\include{capitulo2}
+\include{capitulo3}
+\include{capitulo4}
+\include{capitulo5}
+\include{capitulo6}
+\include{capitulo7}
+%\include{conclu}
+\begin{thebibliography}{1}
+
+\bibitem{Morales_g}
+E.F.Morales and L.E. Sucar, \emph{Robots y su importancia para M\'exico}, 1st~ed.\hskip 1em plus
+  0.5em minus 0.4em\relax Mexico, Instituto Nacional de Astrofisica, Optica y Electronica, Komputer Sapiens 2009 
+  
+\bibitem{Garcia_g}
+Pablo Garcia-Robledo and Jesus Torrijos \emph{Robots de Seguridad y Defensa}\hskip 1em plus
+  0.5em minus 0.4em\relax  Espa\~na, Universidad Politecnica de Madrid, 2010
+
+\bibitem{Vasquez_g}
+J.A. Garcia and L.A. Vasquez  \emph{Los Robots en el Sector Agr\'icola}\hskip 1em plus
+  0.5em minus 0.4em\relax  España, Departamento  De automatica, Ingenieria Electronica e Informatica Industrial, Universidad Politecnica de Madrid,2010
+
+\bibitem{Baltes_g}
+Jacky Baltes and John Anderson \emph{Intelligent Global Vision for Teams of Mobile Robots, Mobile Robots:Perception \& Navigation, Sascha Kolski (Ed.), ISBN: 3-86611-283-1, InTech,Available from: http://www.intechopen.com/books/mobile-robots-perception-navigation/intelligent-global-vision-for-teams-of-mobile-robots}, 1st ed.\hskip 1em plus
+  0.5em minus 0.4em\relax Pro Literatur Verlag, Germany/ARS Austria 2007.
+
+\bibitem{Brezac_g}
+Misel Brezac, Ivan Petrovic and Edouard Ivanjko, \emph{Robust and accurate global vision system for real time tracking of multiple mobile robots,Robotics and Autonomous Systems 56 (2008) 213-230.}\hskip 1em plus
+  0.5em minus 0.4em\relax Elsiever, 2008
+
+\bibitem{acharya_g}
+Tinku Acharya and Ajoy K. Ray, \emph{Image Processing Principles and Applications, pag. 6}, 1st ed.\hskip 1em plus
+  0.5em minus 0.4em\relax  B. Michaelis and G. Krell (Eds.): DAGM 2003, LNCS 2781, pp. 591–599, Springer-Verlag Berlin Heidelberg 2003.
+
+\bibitem{kelson_glo}
+Kelson Romulo Teixeira Aires, Pablo Javier Alsina, Adelardo Adelino Dantas de Medeiros , \emph{A GLOBAL VISION SYSTEM FOR MOBILE MINI-ROBOTS} ed.\hskip 1em plus 0.5em minus 0.4em\relax SIMPÓSIO BRASILEIRO DE AUTOMAÇÃO INTELIGENTE, 5, Canela, 2001
+
+\bibitem{chabra_glo}
+Manu Chhabra, Anusheel Nahar, Nishant Agrawal, Tamhant Jain,Amitabha Mukerjee, Apurva Mathad and Siddhartha Chaudhuri, \emph{Novel Approaches to Vision and Motion Control for Robot Soccer} ed.\hskip 1em plus 0.5em minus 0.4em\relax Proceedings  of the National Conference on Advance Manufacturing and Robotics, India 2004 
+
+
+\bibitem{ball_glo}
+
+Ball, David and Wyeth, Gordon and Nuske, Stephen, \emph{A global vision 
+system for a robot soccer team} ed.\hskip 1em plus 0.5em minus 0.4em\relax SAustralasian Conference on Robotics and Automation, 6-8 December 2004, Canberra
+
+\bibitem{clau_glo}
+Gönner, Claudia and Rous, Martin and Kraiss, Karl-Friedrich, \emph{Real-Time Adaptive Colour Segmentation for the RoboCup Middle Size League} ed.\hskip 1em plus 0.5em minus 0.4em\relax RoboCup 2004: Robot Soccer World Cup VIII, Springer Berlin Heidelberg
+
+ \bibitem{nummiaro_mot}
+Kajta Nummiaro, Esther Koller-Meier, Tomas Svoboda, Daniel Roth, and Lucas Van Gool and Ajoy K. Ray, \emph{Color-Based Object Tracking in Multi-camera Environments}, 1st ed.\hskip 1em plus
+  0.5em minus 0.4em\relax  B. Michaelis and G. Krell (Eds.): DAGM 2003, LNCS 2781, pp. 591–599, Springer-Verlag Berlin Heidelberg 2003 
+  
+ \bibitem{morioka_mul}
+Kazuki Morioka, Silvester Kovacs, Peter Korondp, Joo-Hoo Lee and Hideki Hashimoto, \emph{Adaptative camera selection based on fuzzy automaton for object tracking in a Muticamera System} ed.\hskip 1em plus
+  0.5em minus 0.4em\relax Journal of Engineering Annals of Faculty of Engineering Hunedoara, 2008 
+  
+ \bibitem{Dick_mot}
+Anthony R. Dick and Michael J. Brooks, \emph{A Stochastic Approach to Tracking Objetcs Across Multiple  Cameras} ed.\hskip 1em plus 0.5em minus 0.4em\relax Springer -Verlag Berlin Heidelberg, 2004
+ 
+\bibitem{garcia_mot}
+Renato F. Garcia, Pedro M. Shiroma, Luiz Chaimowicz, Mario F.M. Campos, \emph{Um Arcabouco para Localizacao de Enxames de Robos} ed.\hskip 1em plus 0.5em minus 0.4em\relax Universidade Federal de Minas Gerais, Belo Horizonte,VIII Simposio Brasileiro de Automacao Inteligente, Brazil 2007
+
+\bibitem{kumar_mot}
+Piyush Kumar Rai, Kamal Tiwari, Prithwijit Guha and Amitabha Mukerjee , \emph{A cost-Effective Multiple Camera Vision System using Firewire Cameras and Software Synchronization} ed.\hskip 1em plus 0.5em minus 0.4em\relax IIT Kanpur, UP, India 2003. 
+
+\bibitem{karabiber_mot}
+Fethullah Karabiber,  Paolo Arena, Luigi Fortuna,  Sabestiano De Fiore,  Guido Vagliasindi and Sabri Arik , \emph{Implementation of a Moving Target Tracking Algorithm Using Eye-RIS Vision System on a Mobile Robot} ed.\hskip 1em plus 0.5em minus 0.4em\relax Springer Science+Business Media, LLC 2010 
+
+\bibitem{hossiein_mul}
+Amir Hossein Khalili and Shohreh Kasaei , \emph{Object Modeling for Multicamera Correspondence Using Fuzzy Region Color Adjacency Graphs} ed.\hskip 1em plus 0.5em minus 0.4em\relax Springer Berlin Heidelberg, Advances in Computer Science and Engineering 2009 
+
+
+\bibitem{oto_mul}
+Emre Oto, Frances Lau, and Hamid Aghajan , \emph{Color-Based Multiple Agent Tracking for
+Wireless Image Sensor Networks} ed.\hskip 1em plus 0.5em minus 0.4em\relax Proceedings of the 8th international conference on Advanced Concepts For Intelligent Vision Systems,Springer-Verlag,2006
+
+\bibitem{yaldaz_mot}
+Yildiz, Alparslan and Akgul, YusufSinan , \emph{A Fast Method for Tracking People with Multiple Cameras} ed.\hskip 1em plus 0.5em minus 0.4em\relax Trends and Topics in Computer Vision,Springer Berlin Heidelberg,2012
+
+\bibitem{Santos_art}
+Santos, Thiago T. and Morimoto, Carlos H. , \emph{Multiple camera people detection and tracking using support integration} ed.\hskip 1em plus 0.5em minus 0.4em\relax Journal Pattern Recognition Letters,SElsevier B.V.,2011
+
+\bibitem{Hofman_art}
+Hofmann, M., Wolf, D., \& Rigoll, G. (2013).  \emph{Hypergraphs for Joint Multi-view Reconstruction and Multi-object Tracking}. \hskip 1em plus 0.5em minus 0.4em\relax 2013 IEEE Conference on Computer Vision and Pattern Recognition, 3650–3657. doi:10.1109/CVPR.2013.468
+
+\bibitem{Leal_art}
+L. Leal-Taixe, G. Pons-Moll, and B. Rosenhahn. \emph{Branch-and-price global optimization for multi-view multi-object tracking}. \hskip 1em plus 0.5em minus 0.4em\relax In 2012 IEEE Conference on Computer Vision and Pattern Recognition, June 2012
+
+\bibitem{Bilir_art}
+Bilir, S. C., \& Yemez, Y. (2012).\emph{ Non-rigid 3D shape tracking from multiview video}. \hskip 1em plus 0.5em minus 0.4em\relax  Computer Vision and Image Understanding, 116(11), 1121–1134. doi:10.1016/j.cviu.2012.07.001
+
+\bibitem{Greek_art}
+Tzevanidis, K., \& Argyros, A. (2011).  \emph{Unsupervised learning of background modeling parameters in multicamera systems}.  \hskip 1em plus 0.5em minus 0.4em\relax Computer Vision and Image Understanding, 115(1), 105–116. doi:10.1016/j.cviu.2010.09.003
+\bibitem{lib_rob1}
+Antonio Barrientos, Luis Felipe Pe\~nin, Carlos Balaguer \& Rafael Aracil (1997). \emph{Fundamentos de Rob\'otica }.  \hskip 1em plus 0.5em minus 0.4em\relax McGraw-Hill/ Interamericana Espa\~na. ISBN 84-481-0815-9
+
+\bibitem{lib_rob2}
+
+Bruno Siciliano, Lorenzo Sciavicco, Luigi Villani \& Giuseppe Oriolo (2009). \emph{Robotics Modelling, Plannig and Control }.  \hskip 1em plus 0.5em minus 0.4em\relax Springer-Verlag London Limited. ISBN 978-1-84628-641-4
+
+\bibitem{art_red1}
+
+Juan, R. Q., \& Chacón, A. (2011). \emph{Redes neuronales artificiales para el procesamiento de imágenes , una revisión de la última década}.  \hskip 1em plus 0.5em minus 0.4em\relax Revista de Infenieria Electrica, Electronica y Computacion ISSN 1870-9532
+%%%aun no esta referenciada apropiadamente
+%\bibitem{thrun_mot}
+%Wang, C.-C., Thorpe, C., Thrun, S., Hebert, M., & Durrant-Whyte, H. (2007). \emph{Simultaneous Localization, Mapping and Moving Object Tracking}. The International Journal of Robotics Research, 26(9), 889–916. doi:10.1177/0278364907081229
+
+
+\end{thebibliography}
+\appendix
+%% Cap'itulos incluidos despues del comando \appendix aparecen como ap'endices
+%% de la tesis.
+%\include{apendiceA}
+%\include{apendiceB}
+%\include{apendiceC}
+
+
+
+\end{document}

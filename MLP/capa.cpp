@@ -5,18 +5,15 @@
 
 
 using namespace std;
-Capa::Capa(int prev_n_neurons, int n_neurons)
+Capa::Capa(int prev_n_neurons, int num_neu)
 {
     // all the layers/neurons must use the same random number generator,
-    _n_neurons = n_neurons + 1;
+    num_neu_cap = num_neu + 1;
     _prev_n_neurons = prev_n_neurons + 1;
     // allocate everything
-    //no me convence esta linea pe
-    /*
-    vector<Neuron> neur;
-    neuronas =  neur;*/
-    salidas = vector< float>(_n_neurons);
-    for (int i = 0; i < _n_neurons; ++i)
+    salidas = vector< float>(num_neu_cap);
+    for (int i = 0; i < num_neu_cap; ++i)
+        cout<<"Neurona Numero: "<<i+1<<endl;
         neuronas.push_back( Neuron(_prev_n_neurons));
 }
 vector<float> Capa::agrega_bias(vector<float>entrada){
@@ -30,25 +27,29 @@ vector<float> Capa::agrega_bias(vector<float>entrada){
 vector<float> Capa::evalua(vector<float>entr){
     vector <float> entradas;
 
-            // add an input (bias) if necessary
+            // no aseguramos que la bias este colocada
             if (entr.size()!= getPesos(0).size())
                 entradas = agrega_bias(entr);
             else
                 entradas = entr;
 
-            assert (getPesos(0).size() == entradas.size());
+           if(getPesos(0).size() == entradas.size()){
 
                 // stimulate each neuron of the layer and get its output
-                for (int i = 1; i < _n_neurons; ++i)
+                for (int i = 1; i < num_neu_cap; ++i)
                     salidas[i] = neuronas.at(i).activaciones(entradas);
 
                 // bias treatment
                 salidas[0] = 1.0f;
                 return salidas;
+           }
+           else {
+               cout<<"hubo un problema con la evaluacion de la capa "<<endl;
+           }
 
 }
 int Capa::getTamanio(){
-    return _n_neurons;
+    return num_neu_cap;
 }
 
 float Capa::getSalidas(int i){

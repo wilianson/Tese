@@ -6,10 +6,14 @@
 using namespace std;
 class Capa
 {
-    int _n_neurons, _prev_n_neurons;
+    //int num_neu_cap, _prev_n_neurons;
+    //vector<Neuron> neuronas;
+    //vector<float> salidas;
+public:
+    int num_neu_cap, _prev_n_neurons;
     vector<Neuron> neuronas;
     vector<float> salidas;
-public:
+
     Capa(int prev_n_neurons, int n_neurons);
     vector<float> agrega_bias(vector<float> entrada);
     vector<float> evalua(vector<float> entr);

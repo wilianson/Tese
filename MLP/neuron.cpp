@@ -18,26 +18,15 @@ Neuron::Neuron(int prev_n_neurons)
     for (int i = 0; i < prev_n_neurons; ++i)
     {
         pesosSinapticos.push_back( (rand()%10000)/10000.0 - 0.5f);
-        cout<<" el peso en con el neuron " << pesosSinapticos.at(i)   <<endl;
+        cout<<" el peso en con el neuron " << pesosSinapticos[i]   <<endl;
     }
     cout<<"El tamaño del neuron es "<<pesosSinapticos.size()<<endl;
-}
-int Neuron::getNumElem(float *array){
-
-    int ite=-1 ;
-    float elem=1.0;
-    while(elem!=NULL){
-        ite++;
-        elem=array[ite];
-        cout<<elem<<"  "<<ite<<endl;
-    }
-    return ite-1;
 }
 
 float Neuron::activaciones(vector <float> entradas){
     activacion = 0.0f;
 
-    //cout<<"El tamaño de la entrada es: "<<sizeof(entradas)/sizeof(entradas[0]);
+    cout<<"El tamaño de la entrada es: "<<sizeof(entradas)/sizeof(entradas[0]);
     if (entradas.size() == pesosSinapticos.size()){
     for (int i = 0; i < entradas.size(); ++i) // producto escalar del peso por las entradas
         activacion += entradas.at(i) * pesosSinapticos.at(i);

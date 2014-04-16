@@ -1,0 +1,76 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: tesis.aux
+The style file: ezspanish.bst
+A level-1 auxiliary file: titlepage.aux
+A level-1 auxiliary file: gracias.aux
+A level-1 auxiliary file: intro.aux
+A level-1 auxiliary file: capitulo1.aux
+A level-1 auxiliary file: capitulo2.aux
+A level-1 auxiliary file: bibliografia.aux
+Illegal, another \bibstyle command---line 6 of file bibliografia.aux
+ : \bibstyle
+ :          {plain}
+I'm skipping whatever remains of this command
+Database file #1: biblio.bib.bib
+Warning--I didn't find a database entry for "Garcia_g"
+Warning--I didn't find a database entry for "Vasquez_g"
+Warning--I didn't find a database entry for "Baltes_g"
+Warning--I didn't find a database entry for "Brezac_g"
+Warning--I didn't find a database entry for "acharya_g"
+Warning--I didn't find a database entry for "kelson_glo"
+Warning--I didn't find a database entry for "chabra_glo"
+Warning--I didn't find a database entry for "ball_glo"
+Warning--I didn't find a database entry for "clau_glo"
+Warning--I didn't find a database entry for "morioka_mul"
+Warning--I didn't find a database entry for "hossiein_mul"
+Warning--I didn't find a database entry for "nummiaro_mot"
+Warning--I didn't find a database entry for "oto_mul"
+Warning--I didn't find a database entry for "Dick_mot"
+Warning--I didn't find a database entry for "yaldaz_mot"
+Warning--I didn't find a database entry for "kumar_mot"
+Warning--I didn't find a database entry for "karabiber_mot"
+Warning--I didn't find a database entry for "garcia_mot"
+Warning--empty journal in Morales_g
+Warning--empty year in Morales_g
+You've used 1 entry,
+            2833 wiz_defined-function locations,
+            621 strings with 5192 characters,
+and the built_in function-call counts, 521 in all, are:
+= -- 35
+> -- 20
+< -- 1
++ -- 7
+- -- 6
+* -- 37
+:= -- 82
+add.period$ -- 2
+call.type$ -- 1
+change.case$ -- 7
+chr.to.int$ -- 1
+cite$ -- 3
+duplicate$ -- 41
+empty$ -- 37
+format.name$ -- 11
+if$ -- 93
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 9
+newline$ -- 13
+num.names$ -- 4
+pop$ -- 31
+preamble$ -- 1
+purify$ -- 6
+quote$ -- 0
+skip$ -- 15
+stack$ -- 0
+substring$ -- 11
+swap$ -- 14
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 9
+warning$ -- 2
+while$ -- 3
+width$ -- 0
+write$ -- 17
+(There was 1 error message)

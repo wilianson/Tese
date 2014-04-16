@@ -12,9 +12,7 @@ using namespace std;
 class Neuron
 {
     float activacion;
-    //array <float> pesosSinapticos;
     vector<float> pesosSinapticos;
-    //float* pesosSinapticos;
     const static float lambda = 1.5f;
 public:
     Neuron(int prev_n_neurons);

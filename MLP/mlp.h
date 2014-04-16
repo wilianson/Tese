@@ -6,10 +6,11 @@ using namespace std;
 class MLP
 {
     vector<Capa> capas;
-    vector<vector<vector<float> > > _delta_w;
+    vector<float** > _delta_w;
     vector<vector <float> > _grad_ex;
 
 public:
+    int x,y;
     MLP(vector <int> array_num_capas);
     vector <float> evaluar(vector <float> entra);
     float evaluarError(vector <float >salida, vector <float> salida_deseada);

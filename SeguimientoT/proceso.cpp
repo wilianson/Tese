@@ -57,11 +57,11 @@ bool Proceso::chkCam()
 
 void Proceso::proces_camera(Robot robots[])
 {
-    cout<<"EL TAMAÑO DEL SAMPLES SERIA  "<<this->samples.size()<<endl;
+   // cout<<"EL TAMAÑO DEL SAMPLES SERIA  "<<this->samples.size()<<endl;
     //Pedir el siguiente frame
     this->frame = cvQueryFrame( this->capture );
     CvSeq* circles = getCirclesInImage(this->frame,  this->storage, this->grayscaleImg);
-    cout<<endl<<"EL TAMAÑO DEL    CIRCLES ES "<<circles->total<<endl;
+    //cout<<endl<<"EL TAMAÑO DEL    CIRCLES ES "<<circles->total<<endl;
     float radios[2];
     CvPoint centros[2];
 
@@ -81,11 +81,11 @@ void Proceso::proces_camera(Robot robots[])
             float r = container[2];
             radios[i] =container[2];
             //miremos lo ciclos
-            cout<<"ciclo numero "<<i<<endl;
+            //cout<<"ciclo numero "<<i<<endl;
             //total del circulos
-            cout<<"numero de circulos "<<circles->total<<endl;
-            cout<<"radio del circulo  "<<i<<" "<<r<<endl;
-            cout<<"posicion "<<x<<" , "<<y<<endl;
+            //cout<<"numero de circulos "<<circles->total<<endl;
+            //cout<<"radio del circulo  "<<i<<" "<<r<<endl;
+           // cout<<"posicion "<<x<<" , "<<y<<endl;
             if (x-r < 0 || y-r < 0 || x+r >= this->frame->width || y+r >= this->frame->height) {
                 continue;
             }
@@ -114,10 +114,10 @@ void Proceso::proces_camera(Robot robots[])
         }
         //*****Esto es el calculo de la posicion y orientacion
         double orient=find_orien(centros[0],centros[1]);
-        orientaciones.push_back(orient);
+
         drawOrientationAndLabel(this->frame, orient);
         float dist =eucdist(centros[0],centros[1]);
-        cout <<"La supuesta distancia seria: "<<dist<<endl;
+        //cout <<"La supuesta distancia seria: "<<dist<<endl;
 
         //encontrando la posicion segun kelson y el paper de bianchi
         //CvPoint pos=find_pos(centros[0],centros[1]);
@@ -126,19 +126,20 @@ void Proceso::proces_camera(Robot robots[])
         //CvPoint pos=find_pos_trig(centros[0],centros[1],orient,dist);
         CvPoint pos=find_pos_sing(centros[0],centros[1]);
         drawObjectPosition(this->frame, pos);
-        posiciones.push_back(pos);
-        cout <<"La posicion del robot es: "<<pos.x <<" , " <<pos.y<<endl;
+        //colocando solo si exiten en los contenedores que utilizare para poner en mi archivo
+        if(pos.x>0&&pos.y>0&&orient>0){
+            orientaciones.push_back(orient);
+            posiciones.push_back(pos);
+        }
+       // cout <<"La posicion del robot es: "<<pos.x <<" , " <<pos.y<<endl;
         //crear un archivo
 
-        fstream file("posiciones.txt");
 
         //Colocando las posiciones en el Robot
         for (int i=0;i<circles->total;i=+2)
         {
             robots[i].orien_t=find_orien(centros[i],centros[i+1]);
             robots[i].pos_t=find_pos(centros[i],centros[i+1]);
-            //guardarlo en un fichero
-            file<<"( "<<robots[i].pos_t.x<<" , "<<robots[i].pos_t.y<<" )"<<"\t"<<"\t"<<robots[i].orien_t<<endl;
         }
         this->samples.push_back(circles);
         if (this->samples.size() > HISTORY_SIZE) {
@@ -256,8 +257,12 @@ void Proceso::drawObjectPosition(IplImage* frame, CvPoint p) {
     CvFont font;
     cvInitFont(&font, CV_FONT_HERSHEY_COMPLEX_SMALL, 1, 1, 0.0, 1, 8);
     //circulo encerrado
+    CvPoint punto;
+    punto.x=100;
+    punto.y=100;
     cvCircle( frame, p, 5, CV_RGB(0,255,255), 3, 8, 0 );
     cvPutText( frame, "Posicion", p, &font, CV_RGB(0,0,255) );
+    //cvPutText( frame, p.x+","+p.y, punto, &font, CV_RGB(0,0,255) );
 }
 void Proceso::drawOrientationAndLabel(IplImage* frame, double orien) {
     //dibuja el circulo en la imagen original

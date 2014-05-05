@@ -8,7 +8,7 @@
 
 \begin{itemize}
 \item El Sistema de Vision fue implementado utilizando la biblioteca OpenCV y se uso la IDE de programacion  QT Creator.
-\item Se tuvo alta complejidad para utilizar c\'amaras de bajo costo y sin ningun estandar ni tarjeta adicional.
-\item El bus USB de el sistema operativo probado (Ubuntu 12.04) no alcanza para los formatos predeterminados de las c\'amaras no alcanza para hacer un ambiente multic\'amara
-\item Se utilizo c\'amaras Logitech C210, las cuales fueron configuradas para utilizarlas en formato MJPEG, el cual es un formato de video comprimido que nos permite tener varias camaras conectadas al mismo tiempo si exceder el ancho de banda del Bus USB.
+\item Se utilizo el \textit{Neural Network Toobox} para realizar la comparacion de nuestro algoritmo de seguimiento.
+\item Para comparar se utilizo red Neuronal Dinamica la cual nos permitia utilizar valores anteriores a nuestro actual valor de entrada para tener una mejor salida, sin embargo de acuerdo a las graficas obtenidas hay mejor precision con el modelo de red RBF..
+\item Las graficas obtenidas por el Matlab nos indican que nuestra red tiene un buen desempeño, ya que los datos comparados no estan muy separados entre si.
 \end{itemize}

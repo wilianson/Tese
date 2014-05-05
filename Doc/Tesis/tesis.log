@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.11.3)  2 MAY 2014 00:26
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.11.3)  4 MAY 2014 23:18
 entering extended mode
  %&-line parsing enabled.
 **tesis.tex
@@ -255,21 +255,26 @@ Package: hypcap 2008/09/08 v1.10 Adjusting anchors of captions (HO)
 
 LaTeX Warning: Label `fig_mar' multiply defined.
 
-) (./capitulo4.aux
-
-LaTeX Warning: Label `fig_mar' multiply defined.
-
-
-LaTeX Warning: Label `fig_mar' multiply defined.
-
-
-LaTeX Warning: Label `fig_mar' multiply defined.
-
 ) (./capitulo5.aux
 
 LaTeX Warning: Label `fig_mar' multiply defined.
 
+
+LaTeX Warning: Label `fig_mar' multiply defined.
+
+
+LaTeX Warning: Label `fig_cir' multiply defined.
+
+
+LaTeX Warning: Label `fig_cir' multiply defined.
+
+
+LaTeX Warning: Label `fig_cir' multiply defined.
+
 ) (./capitulo6.aux
+
+LaTeX Warning: Label `fig_mar' multiply defined.
+
 
 LaTeX Warning: Label `fig_mar' multiply defined.
 
@@ -436,35 +441,25 @@ Underfull \vbox (badness 3009) has occurred while \output is active []
  (./capitulo2.tex
 Cap\'{\i }tulo 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--15
+Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
-
-Underfull \vbox (badness 1077) has occurred while \output is active []
-
- [10
+[10
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 19--20
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--26
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
 
  []
 
-[11])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [12]
-Underfull \vbox (badness 2035) has occurred while \output is active []
-
- [13]
-[14]
+[11]) [12]
 \openout2 = `capitulo3.aux'.
 
  (./capitulo3.tex
@@ -488,7 +483,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--16
 
 Underfull \vbox (badness 1077) has occurred while \output is active []
 
- [15
+ [13
 
 
 
@@ -496,18 +491,18 @@ Underfull \vbox (badness 1077) has occurred while \output is active []
 
 pdfTeX warning: pdflatex (file ./imagen3.pdf): PDF inclusion: found PDF version
  <1.5>, but at most version <1.4> allowed
-<imagen3.pdf, id=290, 449.68pt x 144.54pt>
+<imagen3.pdf, id=243, 449.68pt x 144.54pt>
 File: imagen3.pdf Graphic file (type pdf)
  <use imagen3.pdf>
 Underfull \hbox (badness 10000) in paragraph at lines 49--51
 
  []
 
-[16]
+[14]
 
 pdfTeX warning: pdflatex (file ./imagen4.pdf): PDF inclusion: found PDF version
  <1.5>, but at most version <1.4> allowed
-<imagen4.pdf, id=298, 597.50786pt x 260.975pt>
+<imagen4.pdf, id=251, 597.50786pt x 260.975pt>
 File: imagen4.pdf Graphic file (type pdf)
  <use imagen4.pdf>
 Overfull \hbox (35.5514pt too wide) in paragraph at lines 66--67
@@ -515,72 +510,95 @@ Overfull \hbox (35.5514pt too wide) in paragraph at lines 66--67
  Con-s-ta de 4 pro-ce-sos basicamente.[[]] 
  []
 
-[17 <./imagen3.pdf> <./imagen4.pdf>]
+[15 <./imagen3.pdf> <./imagen4.pdf>]
 
 pdfTeX warning: pdflatex (file ./imagen5.pdf): PDF inclusion: found PDF version
  <1.5>, but at most version <1.4> allowed
-<imagen5.pdf, id=324, 702.625pt x 68.255pt>
+<imagen5.pdf, id=277, 702.625pt x 68.255pt>
 File: imagen5.pdf Graphic file (type pdf)
- <use imagen5.pdf>) [18 <./imagen5.pdf>]
-\openout2 = `capitulo4.aux'.
-
- (./capitulo4.tex
-Cap\'{\i }tulo 4.
-<imagen9.jpg, id=342, 759.58781pt x 368.1253pt>
-File: imagen9.jpg Graphic file (type jpg)
- <use imagen9.jpg>
-<imagen10.jpg, id=343, 726.46407pt x 371.13657pt>
-File: imagen10.jpg Graphic file (type jpg)
- <use imagen10.jpg>
-<imagen11.jpg, id=344, 636.12656pt x 368.1253pt>
-File: imagen11.jpg Graphic file (type jpg)
- <use imagen11.jpg>) [19
-
-
-
-]
-[20 <./imagen9.jpg> <./imagen10.jpg>] [21 <./imagen11.jpg>]
+ <use imagen5.pdf>) [16 <./imagen5.pdf>]
 \openout2 = `capitulo5.aux'.
 
  (./capitulo5.tex
-Cap\'{\i }tulo 5.
+Cap\'{\i }tulo 4.
 
+
+pdfTeX warning: pdflatex (file ./esquema.pdf): PDF inclusion: found PDF version
+ <1.5>, but at most version <1.4> allowed
+<esquema.pdf, id=295, 529.98pt x 144.54pt>
+File: esquema.pdf Graphic file (type pdf)
+ <use esquema.pdf>
 
 pdfTeX warning: pdflatex (file ./imagen1.pdf): PDF inclusion: found PDF version
  <1.5>, but at most version <1.4> allowed
-<imagen1.pdf, id=362, 385.44pt x 385.44pt>
+<imagen1.pdf, id=297, 385.44pt x 385.44pt>
 File: imagen1.pdf Graphic file (type pdf)
- <use imagen1.pdf> [22
+ <use imagen1.pdf> [17
 
 
 
-]
+ <./esquema.pdf>]
 
 pdfTeX warning: pdflatex (file ./imagen2.pdf): PDF inclusion: found PDF version
  <1.5>, but at most version <1.4> allowed
-<imagen2.pdf, id=373, 385.44pt x 385.44pt>
+<imagen2.pdf, id=315, 385.44pt x 385.44pt>
 File: imagen2.pdf Graphic file (type pdf)
- <use imagen2.pdf>) [23 <./imagen1.pdf>] [24 <./imagen2.pdf>]
+ <use imagen2.pdf>
+Underfull \vbox (badness 4995) has occurred while \output is active []
+
+ [18 <./imagen1.pdf>]
+
+pdfTeX warning: pdflatex (file ./RBF.pdf): PDF inclusion: found PDF version <1.
+5>, but at most version <1.4> allowed
+<RBF.pdf, id=327, 855.99799pt x 362.95601pt>
+File: RBF.pdf Graphic file (type pdf)
+ <use RBF.pdf> [19 <./imagen2.pdf> <./RBF.pdf>]
+
+pdfTeX warning: pdflatex (file ./eq1.pdf): PDF inclusion: found PDF version <1.
+5>, but at most version <1.4> allowed
+<eq1.pdf, id=357, 908.193pt x 157.388pt>
+File: eq1.pdf Graphic file (type pdf)
+ <use eq1.pdf>
+
+pdfTeX warning: pdflatex (file ./eq2.pdf): PDF inclusion: found PDF version <1.
+5>, but at most version <1.4> allowed
+<eq2.pdf, id=359, 932.28299pt x 117.238pt>
+File: eq2.pdf Graphic file (type pdf)
+ <use eq2.pdf>) [20 <./eq1.pdf> <./eq2.pdf>]
 \openout2 = `capitulo6.aux'.
 
  (./capitulo6.tex
-Cap\'{\i }tulo 6.
-<imagen7.jpg, id=408, 87.32625pt x 90.3375pt>
-File: imagen7.jpg Graphic file (type jpg)
- <use imagen7.jpg>
-<imagen8.jpg, id=409, 286.06876pt x 299.61937pt>
-File: imagen8.jpg Graphic file (type jpg)
- <use imagen8.jpg>) [25
+Cap\'{\i }tulo 5.
+
+
+pdfTeX warning: pdflatex (file ./visi.pdf): PDF inclusion: found PDF version <1
+.5>, but at most version <1.4> allowed
+<visi.pdf, id=372, 514.72299pt x 386.24298pt>
+File: visi.pdf Graphic file (type pdf)
+ <use visi.pdf>
+
+pdfTeX warning: pdflatex (file ./salidaRBF.pdf): PDF inclusion: found PDF versi
+on <1.5>, but at most version <1.4> allowed
+<salidaRBF.pdf, id=374, 913.01097pt x 517.935pt>
+File: salidaRBF.pdf Graphic file (type pdf)
+ <use salidaRBF.pdf>
+
+pdfTeX warning: pdflatex (file ./salidaNAR.pdf): PDF inclusion: found PDF versi
+on <1.5>, but at most version <1.4> allowed
+<salidaNAR.pdf, id=376, 594.22pt x 457.71pt>
+File: salidaNAR.pdf Graphic file (type pdf)
+ <use salidaNAR.pdf>) [21
 
 
 
-]
-[26 <./imagen7.jpg> <./imagen8.jpg>]
+] [22 <./visi.pdf> <./salidaRBF.pdf>] [23 <./salidaNAR.pdf>]
 \openout2 = `capitulo7.aux'.
 
  (./capitulo7.tex
-Cap\'{\i }tulo 7.
-) [27
+Cap\'{\i }tulo 6.
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ± in font cmr12!
+) [24
 
 
 
@@ -602,7 +620,7 @@ Missing character: There is no Ã in font cmr12!
 Missing character: There is no ‡ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ƒ in font cmr12!
-[28
+[25
 
 
 ]
@@ -611,17 +629,7 @@ Missing character: There is no ¶ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
- [29]
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no “ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no “ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no “ in font cmr12!
- [30]
+ [26]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ³ in font cmr12!
 Missing character: There is no Ã in font cmti12!
@@ -632,21 +640,21 @@ Missing character: There is no Ã in font cmti12!
 Missing character: There is no º in font cmti12!
 Missing character: There is no Ã in font cmti12!
 Missing character: There is no © in font cmti12!
- [31] (./tesis.aux (./titlepage.aux) (./resumen.aux) (./intro.aux) (./capitulo1
-.aux) (./capitulo2.aux) (./capitulo3.aux) (./capitulo4.aux)
-(./capitulo5.aux) (./capitulo6.aux) (./capitulo7.aux))
+ [27] (./tesis.aux (./titlepage.aux) (./resumen.aux) (./intro.aux)
+(./capitulo1.aux) (./capitulo2.aux) (./capitulo3.aux) (./capitulo5.aux)
+(./capitulo6.aux) (./capitulo7.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6530 strings out of 495061
- 90114 string characters out of 1182621
- 183925 words of memory out of 3000000
- 9442 multiletter control sequences out of 15000+50000
+ 6489 strings out of 495061
+ 89427 string characters out of 1182621
+ 178483 words of memory out of 3000000
+ 9423 multiletter control sequences out of 15000+50000
  9449 words of font info for 33 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 39i,12n,51p,1194b,580s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,13n,51p,1134b,552s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-t
 exlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/font
@@ -655,9 +663,9 @@ lic/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
 /cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb
 ></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/shar
 e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on tesis.pdf (31 pages, 667767 bytes).
+Output written on tesis.pdf (27 pages, 833607 bytes).
 PDF statistics:
- 498 PDF objects out of 1000 (max. 8388607)
- 115 named destinations out of 1000 (max. 500000)
- 315 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 472 PDF objects out of 1000 (max. 8388607)
+ 99 named destinations out of 1000 (max. 500000)
+ 285 words of extra memory for PDF output out of 10000 (max. 10000000)
 

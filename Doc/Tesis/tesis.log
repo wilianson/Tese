@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.11.3)  4 MAY 2014 23:18
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.11.3)  11 MAY 2014 08:54
 entering extended mode
  %&-line parsing enabled.
 **tesis.tex
@@ -272,12 +272,6 @@ LaTeX Warning: Label `fig_cir' multiply defined.
 LaTeX Warning: Label `fig_cir' multiply defined.
 
 ) (./capitulo6.aux
-
-LaTeX Warning: Label `fig_mar' multiply defined.
-
-
-LaTeX Warning: Label `fig_mar' multiply defined.
-
 
 LaTeX Warning: Label `fig_mar' multiply defined.
 
@@ -571,34 +565,62 @@ File: eq2.pdf Graphic file (type pdf)
 Cap\'{\i }tulo 5.
 
 
+pdfTeX warning: pdflatex (file ./robotsito.pdf): PDF inclusion: found PDF versi
+on <1.5>, but at most version <1.4> allowed
+<robotsito.pdf, id=373, 770.88pt x 578.16pt>
+File: robotsito.pdf Graphic file (type pdf)
+ <use robotsito.pdf>
+
 pdfTeX warning: pdflatex (file ./visi.pdf): PDF inclusion: found PDF version <1
 .5>, but at most version <1.4> allowed
-<visi.pdf, id=372, 514.72299pt x 386.24298pt>
+<visi.pdf, id=375, 514.72299pt x 386.24298pt>
 File: visi.pdf Graphic file (type pdf)
  <use visi.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
-pdfTeX warning: pdflatex (file ./salidaRBF.pdf): PDF inclusion: found PDF versi
-on <1.5>, but at most version <1.4> allowed
-<salidaRBF.pdf, id=374, 913.01097pt x 517.935pt>
-File: salidaRBF.pdf Graphic file (type pdf)
- <use salidaRBF.pdf>
+ []
 
-pdfTeX warning: pdflatex (file ./salidaNAR.pdf): PDF inclusion: found PDF versi
-on <1.5>, but at most version <1.4> allowed
-<salidaNAR.pdf, id=376, 594.22pt x 457.71pt>
-File: salidaNAR.pdf Graphic file (type pdf)
- <use salidaNAR.pdf>) [21
+[21
 
 
 
-] [22 <./visi.pdf> <./salidaRBF.pdf>] [23 <./salidaNAR.pdf>]
+] [22 <./robotsito.pdf> <./visi.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
+
+
+pdfTeX warning: pdflatex (file ./prueba_sin.pdf): PDF inclusion: found PDF vers
+ion <1.5>, but at most version <1.4> allowed
+<prueba_sin.pdf, id=394, 411.136pt x 308.352pt>
+File: prueba_sin.pdf Graphic file (type pdf)
+ <use prueba_sin.pdf>
+
+pdfTeX warning: pdflatex (file ./otra_sal.pdf): PDF inclusion: found PDF versio
+n <1.5>, but at most version <1.4> allowed
+<otra_sal.pdf, id=398, 277.035pt x 283.459pt>
+File: otra_sal.pdf Graphic file (type pdf)
+ <use otra_sal.pdf> [23]
+
+pdfTeX warning: pdflatex (file ./prueba33.pdf): PDF inclusion: found PDF versio
+n <1.5>, but at most version <1.4> allowed
+<prueba33.pdf, id=406, 411.136pt x 308.352pt>
+File: prueba33.pdf Graphic file (type pdf)
+ <use prueba33.pdf>
+
+pdfTeX warning: pdflatex (file ./prueba_3.pdf): PDF inclusion: found PDF versio
+n <1.5>, but at most version <1.4> allowed
+<prueba_3.pdf, id=409, 411.136pt x 308.352pt>
+File: prueba_3.pdf Graphic file (type pdf)
+ <use prueba_3.pdf>) [24 <./prueba_sin.pdf>] [25 <./otra_sal.pdf> <./prueba33.p
+df>] [26 <./prueba_3.pdf>]
 \openout2 = `capitulo7.aux'.
 
- (./capitulo7.tex
+
+(./capitulo7.tex
 Cap\'{\i }tulo 6.
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no ± in font cmr12!
-) [24
+) [27
 
 
 
@@ -620,7 +642,7 @@ Missing character: There is no Ã in font cmr12!
 Missing character: There is no ‡ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ƒ in font cmr12!
-[25
+[28
 
 
 ]
@@ -629,7 +651,7 @@ Missing character: There is no ¶ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
- [26]
+ [29]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ³ in font cmr12!
 Missing character: There is no Ã in font cmti12!
@@ -640,7 +662,7 @@ Missing character: There is no Ã in font cmti12!
 Missing character: There is no º in font cmti12!
 Missing character: There is no Ã in font cmti12!
 Missing character: There is no © in font cmti12!
- [27] (./tesis.aux (./titlepage.aux) (./resumen.aux) (./intro.aux)
+ [30] (./tesis.aux (./titlepage.aux) (./resumen.aux) (./intro.aux)
 (./capitulo1.aux) (./capitulo2.aux) (./capitulo3.aux) (./capitulo5.aux)
 (./capitulo6.aux) (./capitulo7.aux))
 
@@ -648,10 +670,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6489 strings out of 495061
- 89427 string characters out of 1182621
- 178483 words of memory out of 3000000
- 9423 multiletter control sequences out of 15000+50000
+ 6521 strings out of 495061
+ 89865 string characters out of 1182621
+ 178744 words of memory out of 3000000
+ 9446 multiletter control sequences out of 15000+50000
  9449 words of font info for 33 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  39i,13n,51p,1134b,552s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -663,9 +685,9 @@ lic/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
 /cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb
 ></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/shar
 e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on tesis.pdf (27 pages, 833607 bytes).
+Output written on tesis.pdf (30 pages, 2538107 bytes).
 PDF statistics:
- 472 PDF objects out of 1000 (max. 8388607)
- 99 named destinations out of 1000 (max. 500000)
- 285 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 509 PDF objects out of 1000 (max. 8388607)
+ 105 named destinations out of 1000 (max. 500000)
+ 300 words of extra memory for PDF output out of 10000 (max. 10000000)
 

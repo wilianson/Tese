@@ -582,26 +582,27 @@ Un problema parecido al que se aborda en esta investigaci\'on, con respecto a lo
 \section{Marco Te\'orico}
 \subsection{Rob\'otica}
 La Rob\'otica fu\'e un t\'ermino acu\~nado por Isaac Asimov, el cual fue un escritor en su tiempo de ciencia ficci\'on, realidad en nuestra era. La rob\'otica tuvo sus inicios en la cultura griega, los cuales llamaban \emph{automatos} que era la palabra que ten\'ian para denominar a sus m\'aquinas, de esta palabra deriva \emph{automata}. Los \'arabes (siglo VII a XV) utilizaron los conocimientos griegos para realizar m\'aquinas que ya no solo las usaban para su diversi\'on sino que comenzaron a darle aplicaciones pr\'acticas un ejemplo de ello eran los dispensadores de agua autom\'aticos. Durante los siglos XVII y XVIII  se crearon algunas m\'aquinas con forma similar a los humanos y algunos animales, estos dispositivos creados en la mayor\'ia por el gremio de relojeros se utilizaban para la diversion y entretenimiento. A finales del siglo VIII y principios del XIX se crearon algunas invenciones mec\'anicas como la hiladora giratoria de Hargreaves(1770), el telar mec\'anico de Cartwright (1785) y el telar de Jacquard (1801).En 1948 R.C. Goertz del \emph{Argonne National Laboratory} desarrollo, el primer telemanipulador con el objetivo de manipular los elementos reactivos sin riesgo a los operadores humanos, este es el antecedente m\'as cercano a los robots, desp\'ues estos telemanipuladores evolucionaron y luego ya se hablaba de robots, cuyas primeras configuraciones eran como de esferas y antropom\'orficas. En 1982 El profesor Makino de la Universidad Yamanashi de Japon desarrolla el robot SCARA (\emph{Selective Compliance Assembly Robot Arm}) cuyo principal objetivo era el de ensabamblado de piezas en cadenas de produccion industriales. \cite{lib_rob1}\\
-La definicion de robotica es la ciencia de estudio de la conexi\'on inteligente entre la percepcion y accion. Com\'unmente un sistema rob\'otico es un sistema complejo compuesto por m\'ultiples subsistemas (Fig 1). La capacidad de un robot para poder ejecutar una accion viene dada por el \textit{Sistema de Actuadores} el cual anima los componentes mec\'anicos del robot. La capacidad de percibir el mundo exterior esta dado por el \textit{Sistema de Sensores} el cual modifica el estado interior del sistema mecanico tomando datos del mundo exterior. La capacidad de conectar la accion con la percepci\'on viene dada por el \textit{Sistema de Control} el cual ejecuta comandos siguiendo las reglas de la tecnica de planificaci\'on del robot.\cite{lib_rob2}
+La definicion de robotica es la ciencia de estudio de la conexi\'on inteligente entre la percepcion y accion. Com\'unmente un sistema rob\'otico es un sistema complejo compuesto por m\'ultiples subsistemas como se muestra en la figura\ref{fig_rob}. La capacidad de un robot para poder ejecutar una accion viene dada por el \textit{Sistema de Actuadores} el cual anima los componentes mec\'anicos del robot. La capacidad de percibir el mundo exterior esta dado por el \textit{Sistema de Sensores} el cual modifica el estado interior del sistema mecanico tomando datos del mundo exterior. La capacidad de conectar la accion con la percepci\'on viene dada por el \textit{Sistema de Control} el cual ejecuta comandos siguiendo las reglas de la tecnica de planificaci\'on del robot.\cite{lib_rob2}
 \begin{figure}
 \centering
 \includegraphics[width=3.0in]{imagen3.pdf}
 
-%\caption{Marcas en cada robot}
-\label{fig_mar}
+\caption{Subsistemas en cada robot}
+\label{fig_rob}
 \end{figure}
 
 %%%%%%%%%%%%%%% ACA PUEDE IR ESA TABLA DEL LIBRO
  \subsection{Redes Neuronales}
  Las redes neuronales artificiales son estructuras paralelas las cuales se acercan al comportamiento de las redes neuronales humanas. Estan compuestas por neuronas  interconectadas mediantes axones donde varias neuronas pueden formar una capa (si se tratara de una red neuronal multicapa), y varias capas formar una neurona.\\
- Podemos explicar una red neuronal con salida binaria con el siguiente grafico:\\
+ Podemos explicar una red neuronal con salida binaria con la figura \ref{fig_img4}\\
  \begin{figure}
 \centering
 \includegraphics[width=3.0in]{imagen4.pdf}
 
-%\caption{Marcas en cada robot}
-\label{fig_mar}
+\caption{Red Neuronal Binaria}
+\label{fig_img4}
 \end{figure}
+
 Donde $x_1,x_2,x_3,...,x_n$ son las entradas para la red neuronal,$w_1,w_2,w_3,...,w_n$  son los pesos sinapticos, y $b$ es un factor de polarizaci\'on. El resultado final de la funci\'on se calcular asi: 
 \begin{equation}
 r= \sum_{i=1}^{n}x_iw_i+b
@@ -609,7 +610,7 @@ r= \sum_{i=1}^{n}x_iw_i+b
 El resultado de esta ecuaci\'on  nos dar\'a 1 o 0 y si se tratara de una red multicapa este seria la entrada para otra red neuronal.\cite{art_red1}
 
  \subsection{Procesamiento de Imagenes}
-El procesamiento de imagenes es utilizado para mejorar las imagenes,prepararlas correctamente para un analisis por parte de m\'aquinas. Consta de 4 procesos basicamente.\cite{art_red1}
+El procesamiento de imagenes es utilizado para mejorar las imagenes,prepararlas correctamente para un analisis por parte de m\'aquinas. Consta de 4 procesos basicamente.\cite{art_red1}. La figura \ref{fig_img5} muestra el esquema.
 \begin{enumerate}
 \item Preprocesamiento: Son operaciones para adaptar la informaci\'on de una imagen y tenerla lista para el siguiente paso. Por ejemplo cambiar el brillo, reducir ruido.
 \item Segmentacion: Separar la imagen en partes de las cuales se pueda hacer un analisis independiente.
@@ -619,36 +620,36 @@ El procesamiento de imagenes es utilizado para mejorar las imagenes,prepararlas 
  \begin{figure}
 	\centering
 	\includegraphics[width=3.0in]{imagen5.pdf}
-	
-	%%\label{fig_mar}
+	\caption{Esquema Procesamiento de Imagen}
+	\label{fig_img5}
 \end{figure}
 % \subsection{Vision Artificial}
  %\subsection{Seguimiento de Objetos}
 \section{PROPUESTA}
-Se propone un abordaje basado en la t\'ecnicas de procesamiento de imagenes que servir\'an para implementar el sistema de visi\'on global, el cual tendr\'a como salida la posici\'on y orientaci\'on actual en cada frame del robot. Luego de este proceso se utilizar\'a una red neuronal  que aprender\'a de los estados y las posiciones y predecir\'a los siguientes estados para hacerle el seguimiento. El esquema se presenta en la figura 4.1: \\
+Se propone un abordaje basado en la t\'ecnicas de procesamiento de imagenes que servir\'an para implementar el sistema de visi\'on global, el cual tendr\'a como salida la posici\'on y orientaci\'on actual en cada frame del robot. Luego de este proceso se utilizar\'a una red neuronal  que aprender\'a de los estados y las posiciones y predecir\'a los siguientes estados para hacerle el seguimiento. El esquema se presenta en la figura \ref{fig_esqsis} \\
 	\begin{figure}
 	\centering
 	\includegraphics[width=2.5in]{esquema.pdf}
 	
 	\caption{Esquema del Sistema}
-	\label{fig_mar}
+	\label{fig_esqsis}
 \end{figure}
 \subsection{Sistema de Visi\'on}
-Para esto utilizamos marcas encima de los robots, las cuales nos dan mas facilidades para realizar la identificaci\'on de cada robot como se muestra en la Figura 4.2.
+Para esto utilizamos marcas encima de los robots, las cuales nos dan mas facilidades para realizar la identificaci\'on de cada robot como se muestra en la figura \ref{fig_marrob}.
 	\begin{figure}
 	\centering
 	\includegraphics[width=2.5in]{imagen1.pdf}
 	
 	\caption{Marcas en cada robot}
-	\label{fig_mar}
+	\label{fig_marrob}
 \end{figure}
 En el sistema de vision proponemos utilizar los m\'etodos de el filtro de Gauss y la transformada de Hough. Para realizar esto utilizamos la libreria de OpenCv, la cual nos da soporte para primero aplicar un filtro de gauss para eliminar el ruido en nuestra imagen, luego convertimos nuestra imagen a la escala de grises, y finalmente aplicamos la transformada de Hough para obtener los c\'irculos en la imagen, cuyos centros tambien son hallados.\\
-Una vez hallados los centros y radios de cada circulo procedemos a realizar el calculo de la ubicacion de nuestro robot, el cual utilizara unos circulos marcados como se muestra en la Fig  \ref{fig_cir}. Entonces como tenemos dos circulos de ubicacion conocida procedemos a aplicar el metodo  que nos dice que la posicion basado en esos dos circulos estara en el punto medio de la recta que une los dos centros  $c_i$ y $c_j$ de los dos circulos \cite{kelson_glo}. Entonces aplicamos punto medio entre los dos centros de los circulos:
+Una vez hallados los centros y radios de cada circulo procedemos a realizar el calculo de la ubicacion de nuestro robot, el cual utilizara unos circulos marcados como se muestra en la figura  \ref{fig_cir}. Entonces como tenemos dos circulos de ubicacion conocida procedemos a aplicar el metodo  que nos dice que la posicion basado en esos dos circulos estara en el punto medio de la recta que une los dos centros  $c_i$ y $c_j$ de los dos circulos \cite{kelson_glo}. Entonces aplicamos punto medio entre los dos centros de los circulos:
 \begin{equation}
 x=\frac{x_1+y_2}{2} \qquad; y=\frac{y_1+y_2}{{2}}
 \end{equation}
 
-Una vez hallada la posicion actual del robot procedemos a hallar la orientacion con respecto al eje inicial del la imagen, de la misma forma utilizamos un metodo ya utilizado anterioremente,  el cual consiste en comparar los puntos centrales y con su tangente hallar la orientacion (angulo)\cite{kelson_glo}. El angulo $\theta$ de orientacion seria dado por:
+Una vez hallada la posicion actual del robot procedemos a hallar la orientacion con respecto al eje inicial del la imagen, de la misma forma utilizamos un metodo ya utilizado anterioremente,  el cual consiste en comparar los puntos centrales y con su tangente hallar la orientacion (angulo)\cite{kelson_glo} como se muestra en la figura \ref{fig_imgpos}. El angulo $\theta$ de orientacion seria dado por:
 \begin{equation}
 \theta=arctan(\frac{y_1-y_2}{x_1-x_2} )
 \end{equation}
@@ -657,18 +658,18 @@ Una vez hallada la posicion actual del robot procedemos a hallar la orientacion 
 \centering
 \includegraphics[width=2.5in]{imagen2.pdf}
 \caption{C\'alculo de la posici\'on}
-\label{fig_cir}
+\label{fig_imgpos}
 \end{figure}
 Asi ya tenemos la posici\'on actual en cada frame y la orientaci\'on que sigue cada robot, y estamos preparados para darle estos par\'ametros a la red neuronal  y se pueda predecir su siguiente posici\'on.
 
 
 \subsection{Seguimiento del Objeto}
-Para realizar el seguimiento utilizaremos una Red Neuronal de Base Radial, la cual consiste en una red con una  capa de unidades ocultas, conectadas a las entradas y una neurona de salida, con transmicion directa (feedforward), donde las funciones de transferencia entre nodos (o neurones) son funciones simetricas radialmente. La estructura de la Red RBF es similar a la de la figura 4.4.
+Para realizar el seguimiento utilizaremos una Red Neuronal de Base Radial, la cual consiste en una red con una  capa de unidades ocultas, conectadas a las entradas y una neurona de salida, con transmicion directa (feedforward), donde las funciones de transferencia entre nodos (o neurones) son funciones simetricas radialmente. La estructura de la Red RBF es similar a la de la  figura \ref{fig_RBF}.
 \begin{figure}
 \centering
 \includegraphics[width=2.5in]{RBF.pdf}
 \caption{Red Neuronal de Base Radial }
-\label{fig_cir}
+\label{fig_RBF}
 \end{figure}
 
 La salida para una red RBF, viene dada por: 
@@ -682,48 +683,48 @@ El aprendizaje en una red RBF debe ser basado en el minimizar el error, bajo la 
 \sum_{p=1}^{P}(z_p-y_p)
 \]
 Donde $z_p$ es el valor conocido como salida, en nuestro caso la orientacion en el tiempo $t+1$, y $y_p$ es el valor de la salida de la red.\\
-A esta igualdad le aplicamos el metodo de gradiente y la funcion Gaussiana,  luego de realizar los reemplazos correspondientes, nos queda que la variacion  del peso $w_i$ es como en la figura 4.5:\\
+A esta igualdad le aplicamos el metodo de gradiente y la funcion Gaussiana,  luego de realizar los reemplazos correspondientes, nos queda que la variacion  del peso $w_i$ es como en la figura  \ref{fig_eq1} \\
 \begin{figure}
 \centering
 \includegraphics[width=2.5in]{eq1.pdf}
 \caption{Variacion de los pesos $w_i$ }
-\label{fig_cir}
+\label{fig_eq1}
 \end{figure}
-y para los centros quedaria como en la figura 4.6:\\
+y para los centros quedaria como en la figura \ref{fig_eq2}\\
 \begin{figure}
 \centering
 \includegraphics[width=2.5in]{eq2.pdf}
-\caption{Variacion de los pesos $w_i$ }
-\label{fig_cir}
+\caption{Variacion de los centros $w_i$ }
+\label{fig_eq2}
 \end{figure}
 
 \section{Evaluaci\'on}
 \subsection{Sistema de Visi\'on}
 Utilizamos un robot del kit de robotica \textit{Robo Robo},  el cual fue programado para que se mueva aleatoriamente, ademas utilizamos una computadora Intel Core 2 Duo, bajo el Sistema Operativo Ubuntu 12.04. La camara que se utilizo fue una camara \textit{Logitech c210}, y se trabajo aproximadamente a 26 cuadros por segundo.\\
-Se ha hecho pruebas con el sistema de visi\'on el cual encuentra los c\'irculos de las marcas sobre los robots, esto es realizado con la transformada de Hough utilizada del \textit{Opencv 2.4.6}, ademas se puede apreciar que al momento de capturar la imagen se muestra tambien la posicion actual del robot y la orientacion.\\
+Se ha hecho pruebas con el sistema de visi\'on el cual encuentra los c\'irculos de las marcas sobre los robots, esto es realizado con la transformada de Hough utilizada del \textit{Opencv 2.4.6}, ademas se puede apreciar que al momento de capturar la imagen se muestra tambien la posicion actual del robot y la orientacion en la figura  \ref{fig_ubi} \\
  Esto se hace para generar un archivo \textit{.dat} el cual servira como datos de entradas para nuestra red neuronal.
 \begin{figure}
 	\centering
 	\includegraphics[width=2.5in]{visi.pdf}
 	
 	\caption{Ubicacion de los circulos}
-	\label{fig_mar}
+	\label{fig_ubi}
 \end{figure}
 \subsection{Seguimiento del Objeto}
-Como  ya se menciono anteriormente utilizamos los archivos generados por el sistema de vision para nuestro algoritmo de seguimiento, al realizar las comparaciones sobre las salidas generadas por la red y las salidas entregadas por nosotros obtuvimos la la figura 5.2 :
+Como  ya se menciono anteriormente utilizamos los archivos generados por el sistema de vision para nuestro algoritmo de seguimiento, al realizar las comparaciones sobre las salidas generadas por la red y las salidas entregadas por nosotros obtuvimos  en la figura  \ref{fig_salrbf} :
 \begin{figure}
 	\centering
 	\includegraphics[width=2.5in]{salidaRBF.pdf}
 	\caption{Salidas de la red RBF}
-	\label{fig_mar}
+	\label{fig_salrbf}
 \end{figure}
 En el eje $x$ se pusieron las orientaciones otorgadas por el sistema de vision, y en el eje y se puso las salidas que nos da nuestro sistema de prediccion, por el grafico nos dijamos que las predicciones estan muy cercanas a los valores originales.
-Para comparar nuestros resultados utilizamos una red Neuronal del tipo Focused Time Delay, esta tipo de red neuronal dinamica tiene la propiedad de volver a valores anteriores (\textit{delay}) para alimentar a las nuevas salidas, en este caso se dividio toda las muestras en partes para el entrenamiento, para la validacion y para las pruebas, a continuacion mostramos el la misma grafica(figura 5.3). En este caso el algoritmo fue implementado utilizando el  \textit{Neural Network Toolbox} del MatLab, el cual nos dio este resultado mostrado en la figura 5.3 :
+Para comparar nuestros resultados utilizamos una red Neuronal del tipo Focused Time Delay, esta tipo de red neuronal dinamica tiene la propiedad de volver a valores anteriores (\textit{delay}) para alimentar a las nuevas salidas, en este caso se dividio toda las muestras en partes para el entrenamiento, para la validacion y para las pruebas, a continuacion mostramos en la misma figura  \ref{fig_salmat}). En este caso el algoritmo fue implementado utilizando el  \textit{Neural Network Toolbox} del MatLab, el cual nos dio este resultado mostrado en la figura \ref{fig_salmat} :
 \begin{figure}
 	\centering
 	\includegraphics[width=2.5in]{salidaNAR.pdf}
 	\caption{Salida de la Red Focused Time Delay}
-	\label{fig_mar}
+	\label{fig_salmat}
 \end{figure}
 
 %\section{IMPLEMENTACION}
